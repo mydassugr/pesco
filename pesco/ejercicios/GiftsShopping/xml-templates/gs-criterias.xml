@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<!DOCTYPE pesco.GS_CriteriaManager>
+<GS_CriteriaManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <criterias>
+    <id>0</id>
+    <text>A tu Nieto Daniel de 7 años, le gusta mucho el ciclismo y el color amarillo.</text>
+    <person>0</person>
+    <item>3</item>
+  </criterias>
+  <criterias>
+    <id>1</id>
+    <text>A tu hermano Joaquín de 54 años, le gusta mucho la cacería y leer.</text>
+    <person>1</person>
+    <item>18</item>
+  </criterias>
+  <criterias>
+    <id>2</id>
+    <text>A tu sobrino José de 20 años, le gusta mucho esquiar y el color negro.</text>
+    <person>2</person>
+    <item>20</item>
+  </criterias>
+  <criterias>
+    <id>3</id>
+    <text>A tu sobrina Pepa de 60 años, le gustan mucho las flores rojas pero es alérgica a las rosas.</text>
+    <person>3</person>
+    <item>29</item>
+  </criterias>
+  <criterias>
+    <id>4</id>
+    <text>A tu hija Manuela le gusta decorar su casa y el color morado.</text>
+    <person>4</person>
+    <item>34</item>
+  </criterias>
+  <criterias>
+    <id>5</id>
+    <text>A tu hermana Josefa le gustan los zapatos blancos y pasa mucho frío para ir al trabajo.</text>
+    <person>5</person>
+    <item>38</item>
+  </criterias>  
+  <criterias>
+    <id>6</id>
+    <text>A tu sobrina Laura le gusta hacer puzzles y adora los gatos.</text>
+    <person>6</person>
+    <item>48</item>
+  </criterias>
+  <criterias>
+    <id>7</id>
+    <text>A tu nieta Lorena le gusta mucho la ropa y el color rosa.</text>
+    <person>7</person>
+    <item>26</item>
+  </criterias>
+  <criterias>
+    <id>8</id>
+    <text>A tu nieto Pablo le gustan mucho los coches y el color azul.</text>
+    <person>8</person>
+    <item>51</item>
+  </criterias>
+  <criterias>
+    <id>9</id>
+    <text>A tu nieta de 3 años, le gustan las muñecas. Pero no las que son pelirrojas o morenas y tienen el pelo corto.</text>
+    <person>9</person>
+    <item>55</item>
+  </criterias>
+  <criterias>
+    <id>10</id>
+    <text>A tu primo Vicente le gustan mucho los dulces, sobre todo los de navidad.</text>
+    <person>10</person>
+    <item>112</item>
+  </criterias> 
+  <criterias>
+    <id>11</id>
+    <text>A tu hija se le ha roto la lavadora y tiene mucha ropa de sus 4 hijos.</text>
+    <person>11</person>
+    <item>60</item>
+  </criterias>
+  <criterias>
+    <id>12</id>
+    <text>A tu hijo le gusta echarse la siesta en un sillón cómodo y el color negro.</text>
+    <person>12</person>
+    <item>63</item>
+  </criterias>
+  <criterias>
+    <id>13</id>
+    <text>A tu nieto se le ha perdido el teléfono móvil y le gusta el color blanco.</text>
+    <person>13</person>
+    <item>69</item>
+  </criterias>
+  <criterias>
+    <id>14</id>
+    <text>Tu sobrino se acaba de sacar el carnet de moto y le gusta el color rojo.</text>
+    <person>14</person>
+    <item>75</item>
+  </criterias>
+  <criterias>
+    <id>15</id>
+    <text>A tu nieto le gusta mucho jugar a la videoconsola, sobre todo, a los juegos de tiros.</text>
+    <person>15</person>
+    <item>77</item>
+  </criterias>
+  <criterias>
+    <id>16</id>
+    <text>A tu nieta le gusta mucho leer, y además le encantan los animales.</text>
+    <person>16</person>
+    <item>113</item>
+  </criterias>
+  <criterias>
+    <id>17</id>
+    <text>A tu sobrina le gustan las joyas de oro y los anillos.</text>
+    <person>17</person>
+    <item>80</item>
+  </criterias>
+  <criterias>
+    <id>18</id>
+    <text>A tu nieto le gusta mucho el fútbol y le hace falta ropa para hacer deporte.</text>
+    <person>18</person>
+    <item>5</item>
+  </criterias>
+  <criterias>
+    <id>19</id>
+    <text>A tu hermano le gustan mucho las tartas, pero es alérgico al chocolate, a la manzana y al merengue.</text>
+    <person>19</person>
+    <item>88</item>
+  </criterias>
+  <criterias>
+    <id>20</id>
+    <text>A tu sobrina le gusta oler bien, pero no le gustan los olores fuertes.</text>
+    <person>20</person>
+    <item>93</item>
+  </criterias>
+  <criterias>
+    <id>21</id>
+    <text>A tu amigo Luis le gusta mucho caminar por el campo y llevar zapatos adecuados.</text>
+    <person>21</person>
+    <item>47</item>
+  </criterias>
+  <criterias>
+    <id>22</id>
+    <text>A tu amiga María le gusta mucho que le regalen flores blancas, pero no le gustan las margaritas.</text>
+    <person>22</person>
+    <item>31</item>
+  </criterias>
+  <criterias>
+    <id>23</id>
+    <text>A tu amiga Ana, que sabe hablar francés, le gustaría ir de viaje a otro país aunque no le gustan los viajes muy largos.</text>
+    <person>23</person>
+    <item>94</item>
+  </criterias>
+  <criterias>
+    <id>24</id>
+    <text>A tu nieto le gusta mucho ir de paseo y se le ha roto el carrito. No le gustan los colores rojo, verde y gris.</text>
+    <person>24</person>
+    <item>97</item>
+  </criterias>
+    <criterias>
+    <id>25</id>
+    <text>A tu nieta le gusta mucho disfrazarse y los cuentos de princesas.</text>
+    <person>25</person>
+    <item>101</item>
+  </criterias>
+  <criterias>
+    <id>26</id>
+    <text>A tu hermano le gusta hacer viajes y sacar muchas fotos.</text>
+    <person>26</person>
+    <item>67</item>
+  </criterias>
+  <criterias>
+    <id>27</id>
+    <text>Tu nieto está aprendiendo a tocar la guitarra y le gusta mucho el flamenco.</text>
+    <person>27</person>
+    <item>105</item>
+  </criterias>
+  <criterias>
+    <id>28</id>
+    <text>A tu amigo Carlos le gustan mucho los cuadros y los animales.</text>
+    <person>28</person>
+    <item>108</item>
+  </criterias>
+  <criterias>
+    <id>29</id>
+    <text>A tu primo le gusta mucho jugar al baloncesto y ya tiene la equipación y las zapatillas.</text>
+    <person>29</person>
+    <item>9</item>
+  </criterias>
+</GS_CriteriaManager>

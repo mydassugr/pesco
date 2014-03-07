@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/cuestionario
+END
+Question.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/cuestionario/Question.cs
+END
+QuestionaryExercise.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/cuestionario/QuestionaryExercise.cs
+END
+Answer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/cuestionario/Answer.cs
+END
+QuestinaryInstrumentalExercice.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/cuestionario/QuestinaryInstrumentalExercice.cs
+END
+Questionary.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/cuestionario/Questionary.cs
+END
+QuestionaryResults.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/cuestionario/QuestionaryResults.cs
+END

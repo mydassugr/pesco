@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE pesco.PD_PlacesManager[]>
+<PD_PlacesManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Places>
+		<PD_Place>
+			<Id>0</Id>
+			<Name>Tienda de deportes</Name>
+			<Text>la tienda de deportes</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.tienda_de_deportes.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>1</Id>
+			<Name>Librería</Name>
+			<Text>la librería</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.library.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>2</Id>
+			<Name>Tienda de ropa</Name>
+			<Text>la tienda de ropa</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.tienda_de_ropa.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>3</Id>
+			<Name>Floristería</Name>
+			<Text>la floristería</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.floristeria.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>4</Id>
+			<Name>Agencia de viajes</Name>
+			<Text>la agencia de viajes</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.agencia_de_viajes.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>5</Id>
+			<Name>Joyería</Name>
+			<Text>la joyería</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.joyeria.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>6</Id>
+			<Name>Pastelería</Name>
+			<Text>la pastelería</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.pasteleria.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>7</Id>
+			<Name>Perfumería</Name>
+			<Text>la perfumería</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.perfumeria.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>8</Id>
+			<Name>Tienda de animales</Name>
+			<Text>la tienda de animales</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.tienda_de_animales.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>9</Id>
+			<Name>Concesionario</Name>
+			<Text>el concesionario</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.tienda_de_coches.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>10</Id>
+			<Name>Tienda de muebles</Name>
+			<Text>la tienda de muebles</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.tienda_de_muebles.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>11</Id>
+			<Name>Tienda de telefonía</Name>
+			<Text>la tienda de telefonía</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.tienda_de_telefonia.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>12</Id>
+			<Name>Zapateria</Name>
+			<Text>la zapatería</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.zapateria.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>13</Id>
+			<Name>Tienda de decoración</Name>
+			<Text>la tienda de decoración</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.tienda_de_decoracion.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>14</Id>
+			<Name>Juguetería</Name>
+			<Text>la juguetería</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.jugueteria.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>15</Id>
+			<Name>Correos</Name>
+			<Text>Correos</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.postoffice.png</Img>
+		</PD_Place>
+		<PD_Place>
+			<Id>16</Id>
+			<Name>Electrodomésticos</Name>
+			<Text>la tienda de electrodomésticos</Text>
+			<Img>pesco.ejercicios.PackageDelivering.img.places.tienda_de_electrodomesticos.png</Img>
+		</PD_Place>
+	</Places>
+</PD_PlacesManager>

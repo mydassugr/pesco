@@ -1,0 +1,10 @@
+#!/bin/bash
+ARCHIVO=$1
+
+for IP in `grep -v ^# $ARCHIVO | awk '{print $1}'`; do
+VAR=$(cat $ARCHIVO |grep "$IP" -c)
+if [ $VAR -ne 1 ]
+then
+echo "repetido:" $IP
+fi
+done

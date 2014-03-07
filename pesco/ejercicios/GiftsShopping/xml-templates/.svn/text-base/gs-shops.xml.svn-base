@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE pesco.GS_ShopManager>
+<GS_ShopManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <shops>
+    <id>0</id>
+    <name>Tienda de deportes</name>
+    <img>pesco.ejercicios.resources.img.shops.tienda_de_deportes.png</img>
+  </shops>
+  <shops>
+    <id>1</id>
+    <name>Librería</name>
+    <img>pesco.ejercicios.resources.img.shops.libreria.png</img>
+  </shops>
+  <shops>
+    <id>2</id>
+    <name>Tienda de ropa</name>
+    <img>pesco.ejercicios.resources.img.shops.tienda_de_ropa.png</img>
+  </shops>
+  <shops>
+    <id>3</id>
+    <name>Floristería</name>
+    <img>pesco.ejercicios.resources.img.shops.floristeria.png</img>
+  </shops>
+  <shops>
+    <id>4</id>
+    <name>Agencia de viajes</name>
+    <img>pesco.ejercicios.resources.img.shops.agencia_de_viajes.png</img>
+  </shops>
+  <shops>
+    <id>5</id>
+    <name>Joyería</name>
+    <img>pesco.ejercicios.resources.img.shops.joyeria.png</img>
+  </shops>
+  <shops>
+    <id>6</id>
+    <name>Pastelería</name>
+    <img>pesco.ejercicios.resources.img.shops.pasteleria.png</img>
+  </shops>
+  <shops>
+    <id>7</id>
+    <name>Perfumería</name>
+    <img>pesco.ejercicios.resources.img.shops.perfumeria.png</img>
+  </shops>
+  <shops>
+    <id>8</id>
+    <name>Tienda de animales</name>
+    <img>pesco.ejercicios.resources.img.shops.tienda_de_animales.png</img>
+  </shops>
+  <shops>
+    <id>9</id>
+    <name>Concesionario</name>
+    <img>pesco.ejercicios.resources.img.shops.tienda_de_coches.png</img>
+  </shops>
+  <shops>
+    <id>10</id>
+    <name>Tienda de muebles</name>
+    <img>pesco.ejercicios.resources.img.shops.tienda_de_muebles.png</img>
+  </shops>  
+  <shops>
+    <id>11</id>
+    <name>Tienda de telefonía</name>
+    <img>pesco.ejercicios.resources.img.shops.tienda_de_telefonia.png</img>
+  </shops>
+  <shops>
+    <id>12</id>
+    <name>Zapateria</name>
+    <img>pesco.ejercicios.resources.img.shops.zapateria.png</img>
+  </shops>
+  <shops>
+    <id>13</id>
+    <name>Tienda de decoración</name>
+    <img>pesco.ejercicios.resources.img.shops.tienda_de_decoracion.png</img>
+  </shops>
+  <shops>
+    <id>14</id>
+    <name>Juguetería</name>
+    <img>pesco.ejercicios.resources.img.shops.jugueteria.png</img>
+  </shops>
+  <shops>
+    <id>15</id>
+    <name>Electrodomésticos</name>
+    <img>pesco.ejercicios.resources.img.shops.tienda_de_electrodomesticos.png</img>
+  </shops>
+  <shops>
+    <id>16</id>
+    <name>Tienda de música</name>
+    <img>pesco.ejercicios.resources.img.shops.tienda_de_musica.png</img>
+  </shops>
+  <shops>
+    <id>17</id>
+    <name>Tienda de bebés</name>
+    <img>pesco.ejercicios.resources.img.shops.tienda_de_bebes.png</img>
+  </shops>    
+</GS_ShopManager>

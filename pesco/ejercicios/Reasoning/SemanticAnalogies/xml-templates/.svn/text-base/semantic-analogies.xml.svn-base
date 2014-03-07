@@ -1,0 +1,1475 @@
+<?xml version="1.0"?>
+<!DOCTYPE semantic-analogies-exercise>
+<semantic-analogies-exercise>
+  <current-level>low</current-level>
+  <pool>
+    <explanation> Lo opuesto de simple es complicado, ¿y lo opuesto de bonito?</explanation>
+    <solutionExplanation>Porque bonito es opuesto a feo.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>1</ID>
+    <correct-elements>
+      <Value>feo</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>amable</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>feo</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>complicado</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>indicado</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Simple es a complicado lo que bonito es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>Son meses del año con dos meses de diferencia, igual que lunes y miércoles son días de la semana con dos días de diferencia.</explanation>
+    <solutionExplanation> Porque son meses del año con dos meses de diferencia, igual que lunes y miércoles son días de la semana con dos días de diferencia</solutionExplanation>
+    <difficulty>high</difficulty>
+    <ID>2</ID>
+    <correct-elements>
+      <Value>febrero es a abril</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>febrero es a abril</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>mes es a año</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>enero es a diciembre</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>semana es a mes</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Lunes es a miércoles como...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> El río está formado por agua.</explanation>
+    <solutionExplanation>El desierto está formado de arena, lo mismo que el río está formado por agua.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>3</ID>
+    <correct-elements>
+      <Value>arena</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>arena</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>agua</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>rojo</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>seco</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Río es a agua como desierto es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> El día es lo opuesto de la noche.</explanation>
+    <solutionExplanation> Porque la salud es lo opuesto la enfermedad.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>5</ID>
+    <correct-elements>
+      <Value>enfermedad</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>enfermedad</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>alegría</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>vitalidad</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>tristeza</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>El día es a la noche como salud es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> El amor es lo opuesto al odio, ¿y el opuesto de blanco?</explanation>
+    <solutionExplanation> Porque blanco es el opuesto de negro.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>6</ID>
+    <correct-elements>
+      <Value>negro</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>amarillo</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>rojo</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>negro</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>verde</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>El amor es al odio como blanco es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>El sol forma parte de la naturaleza, ¿de qué forma parte el conejo?</explanation>
+    <solutionExplanation>El conejo forma parte de los seres vivos, como el sol de la naturaleza.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>7</ID>
+    <correct-elements>
+      <Value>seres vivos</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>liebre</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>zanahorias</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>caballo</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>seres vivos</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>El sol es a la naturaleza como el conejo es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> La armonía es lo opuesto al desequilibrio.</explanation>
+    <solutionExplanation>Porque el amor es lo opuesto al odio.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>8</ID>
+    <correct-elements>
+      <Value>odio</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>odio</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>tristeza</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>alegría</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>equilibrio</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Armonía es a desequilibrio como amor es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>La inteligencia es una característica de la persona.</explanation>
+    <solutionExplanation>Porque el instinto es característico de los animales.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>9</ID>
+    <correct-elements>
+      <Value>animal</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>animal</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>cruel</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>naturaleza</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>bondad</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Inteligencia es a persona como instinto es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> Los conejos comen zanahorias, ¿quién come queso?</explanation>
+    <solutionExplanation> Porque los ratones comen queso, como el conejo come zanahorias.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>10</ID>
+    <correct-elements>
+      <Value>ratón</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>ratón</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>leche</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>perro</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>gato</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Zanahoria es a conejo como queso es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> El trueno va antes que el relámpago.</explanation>
+    <solutionExplanation> Porque el trueno va antes que el relámpago.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>11</ID>
+    <correct-elements>
+      <Value>trueno</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>trueno</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>sol</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>cielo</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>viento</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>La nube es a la lluvia lo que relámpago es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> La palma es característica de Semana Santa.</explanation>
+    <solutionExplanation>Porque las uvas son características de la noche vieja.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>12</ID>
+    <correct-elements>
+      <Value>Nochevieja</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>Nochevieja</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>San Valentín</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>Pentecostés</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>12 de Octubre</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>La palma es a Semana Santa como las uvas son a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> Un oasis se encuentra en un desierto.</explanation>
+    <solutionExplanation>Porque las islas se encuentran en el mar.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>13</ID>
+    <correct-elements>
+      <Value>mar</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>mar</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>tierra</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>paraiso</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>pescador</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Oasis es a desierto lo que isla es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> La cera es producida por las abejas, ¿quién produce la leche?</explanation>
+    <solutionExplanation>Porque la leche la produce la vaca.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>14</ID>
+    <correct-elements>
+      <Value>a la vaca</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>a la vaca</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>al gato</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>al niño</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>al hombre</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>La cera es a la abeja lo que la leche es...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> Un conjunto de palabras componen una frase.</explanation>
+    <solutionExplanation>Porque la palabra está compuesta por letras.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>15</ID>
+    <correct-elements>
+      <Value>palabra</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>nombre</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>alfabeto</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>palabra</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>número</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Palabra es a frase lo que letra es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> El compás se utiliza para dibujar circunferencias.</explanation>
+    <solutionExplanation>Porque el ángulo recto se dibuja con la escuadra.</solutionExplanation>
+    <difficulty>high</difficulty>
+    <ID>16</ID>
+    <correct-elements>
+      <Value>al ángulo recto</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>al ángulo recto</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>a la longitud</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>a la altura</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>a la superficie</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>El compás es a la circunferencia lo que la escuadra es...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>El café contiene cafeína.</explanation>
+    <solutionExplanation>Porque el tabaco contiene nicotina.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>17</ID>
+    <correct-elements>
+      <Value>tabaco</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>tabaco</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>alcohol</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>chocolate</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>té</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>La cafeína es al café lo que la nicotina es al...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> El trigo se muele en el molino.</explanation>
+    <solutionExplanation>Porque el pan se hace en el horno.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>18</ID>
+    <correct-elements>
+      <Value>horno</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>horno</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>árbol</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>canasto</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>plancha</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Trigo es a molino lo que pan es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> Una abeja vive en una colmena, ¿dónde vive el zorro?</explanation>
+    <solutionExplanation> Porque el zorro vive en la madriguera.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>19</ID>
+    <correct-elements>
+      <Value>madriguera</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>capullo</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>madriguera</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>árbol</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>nido</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Abeja es a colmena lo que zorro es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>El arma que lanza balas es el fusil.</explanation>
+    <solutionExplanation>Porque la catapulta lanza las piedras.</solutionExplanation>
+    <difficulty>high</difficulty>
+    <ID>20</ID>
+    <correct-elements>
+      <Value>catapulta</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>catapulta</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>jabalina</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>arco</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>cuchillo</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Bala es a fusil lo que piedra es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> Los segundos dan lugar a minutos, ¿a qué dan lugar las horas?</explanation>
+    <solutionExplanation>Porque los días están compuestos por horas.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>21</ID>
+    <correct-elements>
+      <Value>día</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>semana</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>mes</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>año</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>día</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Los segundos son a los minutos lo que horas son a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> El agua sacia la sed, ¿qué sacia el pan?</explanation>
+    <solutionExplanation>Porque el hambre se sacia con el pan.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>22</ID>
+    <correct-elements>
+      <Value>hambre</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>molino</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>trigo</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>hambre</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>comida</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Agua es a sed lo que pan es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> En verano hay sol, ¿cúando hay nieve?</explanation>
+    <solutionExplanation> Porque en el invierno hay nieve.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>23</ID>
+    <correct-elements>
+      <Value>invierno</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>blanco</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>frío</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>otoño</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>invierno</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Sol es a verano lo que nieve es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> La llave es el utensilio que abre la puerta, ¿qué afloja el destornillador?</explanation>
+    <solutionExplanation> Porque el destornillador es la herramienta que afloja al tornillo.</solutionExplanation>
+    <difficulty>high</difficulty>
+    <ID>24</ID>
+    <correct-elements>
+      <Value>tornillo</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>tornillo</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>llave inglesa</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>puerta</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>caja</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Llave es a cerradura lo que destornillador es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>Una azada es una herramienta que usa el agricultor, ¿quién usa una jeringa?</explanation>
+    <solutionExplanation>Porque la jeringa es una herramienta que utilizan las enfermeras.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>25</ID>
+    <correct-elements>
+      <Value>enfermera</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>dolor</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>enfermedad</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>inyección</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>enfermera</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Azada es a agricultor lo que jeringa es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>La vaca es un animal más grande que el perro.</explanation>
+    <solutionExplanation>Porque el mosquito es el único animal más pequeño que el escarabajo.</solutionExplanation>
+    <difficulty>high</difficulty>
+    <ID>26</ID>
+    <correct-elements>
+      <Value>mosquito</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>mosquito</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>león</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>elefante</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>animal</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Vaca es a perro como escarabajo es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> La pera y la manzana se asemejan porque ambas crecen en árboles, igual que la patata y el rábano que crecen bajo tierra.</explanation>
+    <solutionExplanation>Porque la patata y el rábano crecen bajo tierra.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>27</ID>
+    <correct-elements>
+      <Value>rábano</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>rábano</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>fresa</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>melocotón</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>lechuga</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Pera es a manzana como patata es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> Alto es lo opuesto de bajo, ¿qué es lo opuesto de cielo?</explanation>
+    <solutionExplanation>El cielo es lo opuesto a la tierra.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>28</ID>
+    <correct-elements>
+      <Value>tierra</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>tierra</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>malva</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>selva</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>sierra</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Alto es a bajo lo que cielo es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>Un remolino es parte del mar.</explanation>
+    <solutionExplanation>Un remolino es parte del mar como la montaña es parte de la sierra.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>29</ID>
+    <correct-elements>
+      <Value>mar</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>fluido</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>mojado</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>mar</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>lluvia</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Montaña es a sierra como remolino es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>La energía potencial aumenta con la altura</explanation>
+    <solutionExplanation>Porque el estudio de la cinética es el movimiento.</solutionExplanation>
+    <difficulty>high</difficulty>
+    <ID>30</ID>
+    <correct-elements>
+      <Value>movimiento</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>movimiento</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>mecánica</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>aceleración</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>moción</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Potencial es a altura como cinética es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> La moneda de Japón es el yen.</explanation>
+    <solutionExplanation>La moneda de Argelia es el dinar.</solutionExplanation>
+    <difficulty>high</difficulty>
+    <ID>31</ID>
+    <correct-elements>
+      <Value>dinar</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>dinar</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>dracma</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>dolar</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>peso</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Japón es a yen como Argelia es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> Un ramo está hecho con flores, ¿de qué está hecho el libro?</explanation>
+    <solutionExplanation>El libro está hecho de papel.</solutionExplanation>
+    <difficulty>high</difficulty>
+    <ID>32</ID>
+    <correct-elements>
+      <Value>papel</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>papel</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>lectura</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>inteligencia</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>estudios</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Ramo es a flores lo que libro es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> Un cuaderno está unido por la espiral.</explanation>
+    <solutionExplanation>El libro está unido por el lomo.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>33</ID>
+    <correct-elements>
+      <Value>libro</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>libro</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>tinta</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>papel</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>pequeño</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Espiral es a cuaderno como lomo es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>Un puente está formado por vigas.</explanation>
+    <solutionExplanation>La presa está formada por muros.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>34</ID>
+    <correct-elements>
+      <Value>presa</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>presa</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>altura</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>cable</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>forma</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Viga es a puente como muro es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>El paraguas sirve para evitar la lluvia, ¿qué evita el guante?</explanation>
+    <solutionExplanation>El guante es para evitar el frío.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>35</ID>
+    <correct-elements>
+      <Value>frío</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>frío</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>agua</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>prenda</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>mano</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Paraguas es a lluvia como guante es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>La ciencia que estudia los planetas es la astronomía.</explanation>
+    <solutionExplanation>La ciencia que estudia las aves es la ornitología.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>36</ID>
+    <correct-elements>
+      <Value>ornitología</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>ornitología</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>misterio</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>universo</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>avicultor</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Planeta es a astronomía como aves es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>El tapón cierra una botella.</explanation>
+    <solutionExplanation>La caja se cierra con la tapa.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>37</ID>
+    <correct-elements>
+      <Value>caja</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>caja</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>jarrón</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>zapato</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>garrafa</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Tapón es a botella como tapa es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>Las lágrimas dan lugar al llanto.</explanation>
+    <solutionExplanation>El fuego da lugar al humo.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>38</ID>
+    <correct-elements>
+      <Value>humo</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>humo</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>frío</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>tristeza</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>árbol</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Lágrimas es a llanto como fuego es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> El sonido que emite el perro es el ladrido, ¿quién emite el maullido?</explanation>
+    <solutionExplanation> El sonido que emite el gato es el maullido.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>39</ID>
+    <correct-elements>
+      <Value>gato</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>gato</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>rana</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>elefante</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>lobo</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Ladrido es a perro como maullido es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> La piel recubre al animal.</explanation>
+    <solutionExplanation> La corteza recubre al árbol.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>40</ID>
+    <correct-elements>
+      <Value>corteza</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>corteza</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>cáscara</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>hombre</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>suave</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Animal es a piel como árbol es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> El zapato se pone en el pie, ¿qué se pone en el cuello?</explanation>
+    <solutionExplanation>La corbata se pone en el cuello.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>41</ID>
+    <correct-elements>
+      <Value>corbata</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>corbata</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>suelo</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>girafa</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>pantalón</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Pie es a zapato como cuello es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> Cerca es lo contrario de lejos, ¿qué es lo contrario de encima?</explanation>
+    <solutionExplanation>Debajo es lo contrario de encima.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>42</ID>
+    <correct-elements>
+      <Value>debajo</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>debajo</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>alejado</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>arriba</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>sobre</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Cerca es a lejos como encima es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> La cría del caballo es el potrillo, ¿cúal es la cría de la vaca?</explanation>
+    <solutionExplanation>La cría de la vaca es el ternero.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>43</ID>
+    <correct-elements>
+      <Value>ternero</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>cabra</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>cachorro</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>buey</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>ternero</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Caballo es a potrillo como vaca es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> El asno emite rebuznos, ¿qué emite el caballo?</explanation>
+    <solutionExplanation>El caballo relincha.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>44</ID>
+    <correct-elements>
+      <Value>relincho</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>coz</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>trotar</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>encabritarse</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>relincho</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Asno es a rebuzno como caballo es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> La cena es la comida que se hace por la noche, ¿cuándo se hace el desayuno?</explanation>
+    <solutionExplanation>El desayuno es por la mañana.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>45</ID>
+    <correct-elements>
+      <Value>mañana</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>abundancia</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>madrugar</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>mañana</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>café</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Cena es a noche como desayuno es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> Una característica de las liebres es que son rápidas.</explanation>
+    <solutionExplanation>Se dice que los zorros son muy astutos.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>46</ID>
+    <correct-elements>
+      <Value>astuto</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>astuto</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>voraz</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>duro</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>simple</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Liebre es a rápido como zorro es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation>En una aldea habitan aldeanos, ¿dónde habitan los ciudadanos?</explanation>
+    <solutionExplanation>Los habitantes de la ciudad son los ciudadanos.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>47</ID>
+    <correct-elements>
+      <Value>ciudad</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>pueblo</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>ciudad</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>calle</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>avenida</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Aldeanos es a aldea como ciudadanos es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> Pequinés es una raza de perro.</explanation>
+    <solutionExplanation>El siamés es una raza de gato.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>48</ID>
+    <correct-elements>
+      <Value>gato</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>gato</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>chino</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>rabo</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>galgo</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Pequinés es a perro como siamés es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> El pan se hace con harina, ¿qué se hace con almendra?</explanation>
+    <solutionExplanation>El turrón se hace con almendras.</solutionExplanation>
+    <difficulty>low</difficulty>
+    <ID>49</ID>
+    <correct-elements>
+      <Value>turrón</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>avellana</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>bocadillo</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>árbol</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>turrón</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Harina es a pan como almendra es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+  <pool>
+    <explanation> El guerrero utiliza la espada.</explanation>
+    <solutionExplanation>La herramienta del escritor es la pluma.</solutionExplanation>
+    <difficulty>medium</difficulty>
+    <ID>50</ID>
+    <correct-elements>
+      <Value>escritor</Value>
+      <Position>0</Position>
+    </correct-elements>
+    <options>
+      <Value>escritor</Value>
+      <Position>1</Position>
+    </options>
+    <options>
+      <Value>volar</Value>
+      <Position>2</Position>
+    </options>
+    <options>
+      <Value>paloma</Value>
+      <Position>3</Position>
+    </options>
+    <options>
+      <Value>tinta</Value>
+      <Position>4</Position>
+    </options>
+    <samples>
+      <Value>Espada es a guerrero como pluma es a...</Value>
+      <Position>0</Position>
+    </samples>
+  </pool>
+</semantic-analogies-exercise>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ItemType>PackagingProject</ItemType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D84BC01D-171A-4B3C-AC37-DE721725BE5C}</ProjectGuid>
+    <Packages>
+      <Packages>
+        <Package name="Linux binarios">
+          <Builder targetFile="pesco-linux.tar.gz" platform="Linux" configuration="Debug|x86" ctype="BinariesZipPackageBuilder">
+            <ChildEntries>
+              <SolutionItemReference path="pesco\pesco.csproj" />
+            </ChildEntries>
+            <RootEntry path="pesco.sln" id=":root:" />
+          </Builder>
+        </Package>
+        <Package name="Microsoft Windows binarios">
+          <Builder targetFile="pesco-windows.tar.gz" platform="Windows" configuration="Debug|x86" ctype="BinariesZipPackageBuilder">
+            <ChildEntries>
+              <SolutionItemReference path="pesco\pesco.csproj" />
+            </ChildEntries>
+            <RootEntry path="pesco.sln" id=":root:" />
+          </Builder>
+        </Package>
+        <Package name="Tarball">
+          <Builder TargetDirectory="..\Desktop\FinalPackage\" DefaultConfiguration="Debug|x86" ctype="TarballDeployTarget">
+            <RootEntry path="pesco\Pesco.csproj" />
+          </Builder>
+        </Package>
+        <Package name="pesco">
+          <Builder TargetDirectory="..\..\Desktop" DefaultConfiguration="Debug|x86" ctype="TarballDeployTarget">
+            <ChildEntries>
+              <SolutionItemReference path="pesco\Pesco.csproj" />
+            </ChildEntries>
+            <RootEntry path="pesco.sln" id=":root:" />
+          </Builder>
+        </Package>
+        <Package name="PESCO Tarball">
+          <Builder TargetDirectory="..\..\Desktop" DefaultConfiguration="Debug|x86" ctype="TarballDeployTarget">
+            <ChildEntries>
+              <SolutionItemReference path="pesco\Pesco.csproj" />
+            </ChildEntries>
+            <RootEntry path="pesco.sln" id=":root:" />
+          </Builder>
+        </Package>
+      </Packages>
+    </Packages>
+    <ReleaseVersion>1.1</ReleaseVersion>
+  </PropertyGroup>
+</Project>

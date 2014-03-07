@@ -1,0 +1,635 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ec-ng/!svn/ver/526/projects/pesco/pesco/gtk-gui
+END
+pesco.PanelObjetosClasificablesSelection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelObjetosClasificablesSelection.cs
+END
+pesco.ExerciseDemoSpatialReasoning.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExerciseDemoSpatialReasoning.cs
+END
+pesco.PanelDemoNumbers.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelDemoNumbers.cs
+END
+pesco.MaritalStatusPane.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.MaritalStatusPane.cs
+END
+pesco.DemoPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.DemoPanel.cs
+END
+pesco.FinishSessionPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.FinishSessionPanel.cs
+END
+pesco.ResidencePane.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ResidencePane.cs
+END
+pesco.ReasoningPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ReasoningPanel.cs
+END
+pesco.GS_PanelShops.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.GS_PanelShops.cs
+END
+pesco.PD_DialogDeliverPackage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PD_DialogDeliverPackage.cs
+END
+pesco.PanelDemoPyramidsTestButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelDemoPyramidsTestButton.cs
+END
+pesco.PanelObjetosClasificables1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelObjetosClasificables1.cs
+END
+pesco.MainWindow.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/ec-ng/!svn/ver/526/projects/pesco/pesco/gtk-gui/pesco.MainWindow.cs
+END
+pesco.PanelEjercicio.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelEjercicio.cs
+END
+pesco.AnswersList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.AnswersList.cs
+END
+pesco.ExercisePanelWordList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExercisePanelWordList.cs
+END
+pesco.PanelPyramidsBoard.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelPyramidsBoard.cs
+END
+pesco.ExerciseDemoGiftsShopping.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExerciseDemoGiftsShopping.cs
+END
+pesco.PanelVacio.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelVacio.cs
+END
+pesco.ExercisePanelObjetosClasificables.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExercisePanelObjetosClasificables.cs
+END
+pesco.SessionScreen.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.SessionScreen.cs
+END
+pesco.WordListCheckingPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.WordListCheckingPanel.cs
+END
+pesco.PanelVocalesYNumerosIzq2.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelVocalesYNumerosIzq2.cs
+END
+pesco.ExercisePanelTaskList1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExercisePanelTaskList1.cs
+END
+pesco.VentanaCreditos.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.VentanaCreditos.cs
+END
+pesco.SemanticSeriesPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.SemanticSeriesPanel.cs
+END
+pesco.ExercisePanelWordListLong.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExercisePanelWordListLong.cs
+END
+pesco.ExercisePanelObjectsClassify.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExercisePanelObjectsClassify.cs
+END
+pesco.ExercisePanelWordList1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExercisePanelWordList1.cs
+END
+pesco.PantallaResultados.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PantallaResultados.cs
+END
+pesco.SessionsPodiumPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.SessionsPodiumPanel.cs
+END
+pesco.LogicalSeriesPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.LogicalSeriesPanel.cs
+END
+pesco.ExercisePanelTaskList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExercisePanelTaskList.cs
+END
+pesco.TaskListPanelMemory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.TaskListPanelMemory.cs
+END
+ecng.PanelGlobos.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/ecng.PanelGlobos.cs
+END
+pesco.SessionWindow.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.SessionWindow.cs
+END
+pesco.PanelDemoPyramids.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelDemoPyramids.cs
+END
+pesco.ContenedorEjercicio.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ContenedorEjercicio.cs
+END
+ecng.PanelDemoGlobos.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/ecng.PanelDemoGlobos.cs
+END
+pesco.DialogPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.DialogPanel.cs
+END
+pesco.CheckMicrofone.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.CheckMicrofone.cs
+END
+pesco.LI_RoomPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.LI_RoomPanel.cs
+END
+pesco.PanelDemoNumbersKeyboard.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelDemoNumbersKeyboard.cs
+END
+pesco.PersonalDataPane.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ec-ng/!svn/ver/526/projects/pesco/pesco/gtk-gui/pesco.PersonalDataPane.cs
+END
+pesco.TotalPodiumPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.TotalPodiumPanel.cs
+END
+pesco.PanelObjetosClasificablesMemory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelObjetosClasificablesMemory.cs
+END
+pesco.SpatialReasoningPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.SpatialReasoningPanel.cs
+END
+pesco.ExercisePanelTaskListLong.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExercisePanelTaskListLong.cs
+END
+pesco.ConfigurationDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ec-ng/!svn/ver/523/projects/pesco/pesco/gtk-gui/pesco.ConfigurationDialog.cs
+END
+pesco.GS_PanelSituation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.GS_PanelSituation.cs
+END
+pesco.UserRegistrationDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.UserRegistrationDialog.cs
+END
+pesco.TrialPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.TrialPanel.cs
+END
+pesco.ClassifyPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ClassifyPanel.cs
+END
+pesco.UsersToggleButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.UsersToggleButton.cs
+END
+pesco.LI_ScenePanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.LI_ScenePanel.cs
+END
+pesco.IntroductionDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.IntroductionDialog.cs
+END
+pesco.PESCOGoodByeDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PESCOGoodByeDialog.cs
+END
+pesco.PanelVocalesYNumerosIzq.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelVocalesYNumerosIzq.cs
+END
+pesco.PanelVocalesYNumerosCen.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelVocalesYNumerosCen.cs
+END
+pesco.SemanticAnalogiesPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.SemanticAnalogiesPanel.cs
+END
+pesco.ReasoningInstructionDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ReasoningInstructionDialog.cs
+END
+pesco.WelcomePanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.WelcomePanel.cs
+END
+pesco.PepeIntroductionDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PepeIntroductionDialog.cs
+END
+pesco.ExerciseDemoSemanticSeries.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExerciseDemoSemanticSeries.cs
+END
+ecng.CheckMicronone1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/ecng.CheckMicronone1.cs
+END
+pesco.Timer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.Timer.cs
+END
+ObjectContainerPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/ObjectContainerPanel.cs
+END
+pesco.ExerciseDemoLogicalSeries.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExerciseDemoLogicalSeries.cs
+END
+pesco.ExerciseDemoSemanticAnalogies.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExerciseDemoSemanticAnalogies.cs
+END
+pesco.PanelPackageDelivering.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ec-ng/!svn/ver/523/projects/pesco/pesco/gtk-gui/pesco.PanelPackageDelivering.cs
+END
+pesco.GS_PanelItemsShop.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.GS_PanelItemsShop.cs
+END
+pesco.PanelDirectNumbers.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelDirectNumbers.cs
+END
+pesco.ListCheckingPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ListCheckingPanel.cs
+END
+pesco.FunctionalScaleDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.FunctionalScaleDialog.cs
+END
+pesco.VentanaEjercicios.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.VentanaEjercicios.cs
+END
+pesco.SeriesPlaceholder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.SeriesPlaceholder.cs
+END
+pesco.PanelDemoEjercicioLetrasYNumeros.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelDemoEjercicioLetrasYNumeros.cs
+END
+pesco.GS_PanelCriterias.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.GS_PanelCriterias.cs
+END
+pesco.VerbalMerorizationPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.VerbalMerorizationPanel.cs
+END
+pesco.LeisureActivitiesPane.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.LeisureActivitiesPane.cs
+END
+gui.stetic
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ec-ng/!svn/ver/526/projects/pesco/pesco/gtk-gui/gui.stetic
+END
+pesco.SessionsPodiumDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.SessionsPodiumDialog.cs
+END
+pesco.GenericHelpDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.GenericHelpDialog.cs
+END
+pesco.ResultsPane.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ResultsPane.cs
+END
+pesco.GS_PanelMyShopping.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.GS_PanelMyShopping.cs
+END
+pesco.ExerciseDemoObjetosClasificables.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExerciseDemoObjetosClasificables.cs
+END
+pesco.MouseTestDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.MouseTestDialog.cs
+END
+ecng.PanelBolsaObjetos.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/ecng.PanelBolsaObjetos.cs
+END
+pesco.PanelVocalesYNumerosDer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelVocalesYNumerosDer.cs
+END
+pesco.BubblePanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.BubblePanel.cs
+END
+pesco.PanelBagItems.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelBagItems.cs
+END
+pesco.panelDemoNumbersKeyboardButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.panelDemoNumbersKeyboardButton.cs
+END
+pesco.PodiumPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PodiumPanel.cs
+END
+pesco.PanelDemoPyramidsTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelDemoPyramidsTest.cs
+END
+pesco.PanelVocalesYNumeros.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelVocalesYNumeros.cs
+END
+pesco.WordListPanelMemory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.WordListPanelMemory.cs
+END
+pesco.EducationalLevelPane.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.EducationalLevelPane.cs
+END
+pesco.LI_HallPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.LI_HallPanel.cs
+END
+pesco.SessionsTree.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.SessionsTree.cs
+END
+generated.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/generated.cs
+END
+pesco.ExerciseDemoNumersAndVowels.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExerciseDemoNumersAndVowels.cs
+END
+pesco.BalloonsPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.BalloonsPanel.cs
+END
+pesco.PanelCuentaAtras.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PanelCuentaAtras.cs
+END
+pesco.ExerciceDemoClassi.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.ExerciceDemoClassi.cs
+END
+pesco.PESCOIntroductionDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/gtk-gui/pesco.PESCOIntroductionDialog.cs
+END

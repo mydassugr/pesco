@@ -1,0 +1,84 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="pesco/cuestionario/gui/AnswersList.cs">
+    <Files>
+      <File FileName="pesco/ejercicios/gui/VentanaEjercicios.cs" Line="4" Column="16" />
+      <File FileName="pesco/ejercicios/gui/ContenedorEjercicio.cs" Line="1" Column="1" />
+      <File FileName="pesco/sesiones/SessionManager.cs" Line="688" Column="4" />
+      <File FileName="pesco/sesiones/gui/SessionWindow.cs" Line="1" Column="1" />
+      <File FileName="pesco/ejercicios/PackageDelivering/ExercisePackageDelivering.cs" Line="7" Column="16" />
+      <File FileName="pesco/ejercicios/PackageDelivering/PanelPackageDelivering.cs" Line="1" Column="1" />
+      <File FileName="pesco/ejercicios/BagItems/ExerciseBagItems.cs" Line="321" Column="54" />
+      <File FileName="pesco/ejercicios/BagItems/PanelBagItems.cs" Line="1" Column="1" />
+      <File FileName="pesco/ejercicios/BagItems/BO_Place.cs" Line="7" Column="16" />
+      <File FileName="pesco/ejercicios/Reasoning/gui/SpatialReasoningPanel.cs" Line="1" Column="1" />
+      <File FileName="pesco/gui/ConfigurationDialog.cs" Line="1" Column="1" />
+      <File FileName="pesco/gui/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="pesco/configuration.xml" Line="74" Column="8" />
+      <File FileName="pesco/sesiones/gui/SessionsTree.cs" Line="1" Column="1" />
+      <File FileName="pesco/sesiones/gui/SessionScreen.cs" Line="1" Column="1" />
+      <File FileName="pesco/ejercicios/GiftsShopping/GS_PanelCriterias.cs" Line="1" Column="1" />
+      <File FileName="pesco/ejercicios/GiftsShopping/GS_PanelItemsShop.cs" Line="1" Column="1" />
+      <File FileName="pesco/Configuration.cs" Line="27" Column="1" />
+      <File FileName="pesco/Main.cs" Line="7" Column="1" />
+      <File FileName="pesco/ejercicios/GiftsShopping/xml-templates/gs-people.xml" Line="2" Column="17" />
+      <File FileName="pesco/ejercicios/GiftsShopping/xml-templates/gs-items.xml" Line="2" Column="17" />
+      <File FileName="pesco/AssemblyInfo.cs" Line="38" Column="1" />
+      <File FileName="pesco/usuarios/User.cs" Line="9" Column="16" />
+      <File FileName="pesco/ejercicios/Reasoning/Classify/ClassifyExerciseElement.cs" Line="44" Column="43" />
+      <File FileName="pesco/cuestionario/gui/AnswersList.cs" Line="2" Column="7" />
+      <File FileName="pesco/AudioManager.cs" Line="27" Column="1" />
+      <File FileName="pesco/Sound.cs" Line="27" Column="1" />
+      <File FileName="pesco/Util.cs" Line="27" Column="1" />
+      <File FileName="pesco/gui/Timer.cs" Line="1" Column="1" />
+      <File FileName="pesco/gui/VentanaCreditos.cs" Line="1" Column="1" />
+      <File FileName="pesco/gui/GtkUtil.cs" Line="1" Column="1" />
+      <File FileName="pesco/gui/BubblePanel.cs" Line="1" Column="1" />
+      <File FileName="pesco/ejercicios/Results.cs" Line="1" Column="1" />
+      <File FileName="pesco/ejercicios/Nivel.cs" Line="1" Column="1" />
+      <File FileName="pesco/ejercicios/XmlSerializable.cs" Line="1" Column="1" />
+      <File FileName="pesco/ejercicios/XmlUtil.cs" Line="1" Column="1" />
+      <File FileName="pesco/ejercicios/BagItems/BO_Scene.cs" Line="1" Column="1" />
+      <File FileName="pesco/ejercicios/DigitosDirectos/PanelDirectNumbers.cs" Line="1" Column="1" />
+      <File FileName="pesco/cuestionario/Answer.cs" Line="1" Column="1" />
+      <File FileName="pesco/usuarios/gui/paneles/PersonalDataPane.cs" Line="1" Column="1" />
+      <File FileName="pesco/ejercicios/Balloons/BalloonsExercise.cs" Line="42" Column="3" />
+      <File FileName="pesco/ejercicios/Balloons/BalloonsPanel.cs" Line="1" Column="1" />
+      <File FileName="pesco/gui/welcome/WelcomePanel.cs" Line="1" Column="1" />
+      <File FileName="pesco/gui/welcome/WelcomeCloudImg.cs" Line="1" Column="1" />
+      <File FileName="pesco/ejercicios/Balloons/BalloonsResults.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Packages" expanded="True" />
+          <Node name="Pesco" expanded="True" selected="True">
+            <Node name="References" expanded="True" />
+            <Node name="cuestionario" expanded="True">
+              <Node name="gui" expanded="True" />
+            </Node>
+            <Node name="ejercicios" expanded="True">
+              <Node name="Balloons" expanded="True">
+                <Node name="demo" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="gui" expanded="True">
+              <Node name="welcome" expanded="True" />
+            </Node>
+            <Node name="sesiones" expanded="True">
+              <Node name="gui" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <AuthorInfo Name="Grupo GEDES" Email="" Copyright="2011 Dept. Lenguajes y Sistemas Informáticos, UGR" />
+</Properties>

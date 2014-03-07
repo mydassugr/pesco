@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<!DOCTYPE cuestionario>
+<cuestionario>
+  <titulo>Escala Funcional: Autonomí­a para las Actividades de la Vida Diaria</titulo>
+  <pregunta>
+    <enunciado>A la hora de comer:</enunciado>
+    <imagen>pesco.cuestionario.img.comida.png</imagen>
+    <respuesta>
+      <texto>No necesito ayuda a la hora de comer</texto>
+      <puntuacion>10</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito un poco de ayuda a la hora de comer</texto>
+      <puntuacion>5</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito ser alimentado por otra persona</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de lavarte/bañarte:</enunciado>
+    <imagen>pesco.cuestionario.img.ducha.png</imagen>
+    <respuesta>
+      <texto>No necesito ayuda a la hora de lavarme o bañarme</texto>
+      <puntuacion>5</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito ayuda a la hora de lavarme o bañarme</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de vestirte:</enunciado>
+    <imagen>pesco.cuestionario.img.ropa.png</imagen>
+    <respuesta>
+      <texto>No necesito ayuda a la hora de vestirme</texto>
+      <puntuacion>10</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito un poco de ayuda a la hora de vestirme</texto>
+      <puntuacion>5</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito ser vestido por otra persona</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de arreglarte:</enunciado>
+    <imagen>pesco.cuestionario.img.aseoPersonal.png</imagen>
+    <respuesta>
+      <texto>No necesito ayuda a la hora de arreglarme</texto>
+      <puntuacion>5</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito ayuda para arreglarme</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de orinar:</enunciado>
+    <imagen>pesco.cuestionario.img.aseo.png</imagen>
+    <respuesta>
+      <texto>No sufro ningún episodio de incontinencia urinaria</texto>
+      <puntuacion>10</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Sólo sufro de algún accidente ocasional de incontinencia</texto>
+      <puntuacion>5</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Soy incontinente</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de la defecación:</enunciado>
+    <imagen>pesco.cuestionario.img.aseo.png</imagen>
+    <respuesta>
+      <texto>Ningún episodio de incontinencia (seco dí­a y noche).
+ Si tengo sonda, puedo cambiar la bolsa solo </texto>
+      <puntuacion>10</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>No sufro ningún episodio de incontinencia</texto>
+      <puntuacion>5</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Soy incontinente</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de ir al retrete:</enunciado>
+    <imagen>pesco.cuestionario.img.aseo.png</imagen>
+    <respuesta>
+      <texto>No necesito ayuda para ir al retrete</texto>
+      <puntuacion>10</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito un poco de ayuda a la hora de ir al retrete</texto>
+      <puntuacion>5</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito mucha ayuda</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de trasladarte al sillón/cama:</enunciado>
+    <imagen>pesco.cuestionario.img.sofa.png</imagen>
+    <respuesta>
+      <texto>No necesito ayuda para transladarme al sillón o a la cama</texto>
+      <puntuacion>15</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito un poco de ayuda para transladarme al sillón o a
+ la cama</texto>
+      <puntuacion>10</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito una gran ayuda para sentarme y para salir o     
+entrar en de la cama</texto>
+      <puntuacion>5</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito grúa o dos personas fuertes para trasladarme</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de andar:</enunciado>
+    <imagen>pesco.cuestionario.img.andar.png</imagen>
+    <respuesta>
+      <texto>Soy capaz de andar 50 metros sin ayuda</texto>
+      <puntuacion>15</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito un poco de ayuda (por ejemplo, un andador),
+para andar 50 metros</texto>
+      <puntuacion>10</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Soy independiente en silla de ruedas</texto>
+      <puntuacion>5</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Soy incapaz de andar</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de subir y bajar escaleras:</enunciado>
+    <imagen>pesco.cuestionario.img.escalera.png</imagen>
+    <respuesta>
+      <texto>No necesito ayuda para subir y bajar escaleras</texto>
+      <puntuacion>10</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito un poco de ayuda a la hora de subir y bajar escaleras</texto>
+      <puntuacion>5</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>No soy capaz de subir y bajar escaleras</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <siguiente_pregunta>0</siguiente_pregunta>
+</cuestionario>

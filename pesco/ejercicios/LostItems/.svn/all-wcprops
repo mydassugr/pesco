@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems
+END
+LI_ScenePanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LI_ScenePanel.cs
+END
+LI_Result.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LI_Result.cs
+END
+LI_ItemInGame.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LI_ItemInGame.cs
+END
+LI_PositionsManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LI_PositionsManager.cs
+END
+LI_RoomsManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LI_RoomsManager.cs
+END
+LI_ResultsManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LI_ResultsManager.cs
+END
+LI_RoomPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LI_RoomPanel.cs
+END
+LI_RoomInGame.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LI_RoomInGame.cs
+END
+LI_Scene.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LI_Scene.cs
+END
+LI_Item.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LI_Item.cs
+END
+LI_HallPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LI_HallPanel.cs
+END
+LI_Position.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LI_Position.cs
+END
+LIExercise.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LIExercise.cs
+END
+LI_ItemsManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LI_ItemsManager.cs
+END
+LI_Room.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ec-ng/!svn/ver/521/projects/pesco/pesco/ejercicios/LostItems/LI_Room.cs
+END

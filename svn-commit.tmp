@@ -1,0 +1,24 @@
+Fixed problem in Bag Items exercise. Results aren't created.
+Fixed problem in Show Medals feature.
+Fixed problem in Pyramids Exercise. Score was < 0 so medal wasn't saved.
+
+--Esta línea y las que están debajo serán ignoradas--
+
+M    ec-ng/ejercicios/LostItems/LI_HallPanel.cs
+M    ec-ng/ejercicios/LostItems/LIExercise.cs
+M    ec-ng/ejercicios/GiftsShopping/GS_PanelMyShopping.cs
+M    ec-ng/ejercicios/gui/SessionsPodiumPanel.cs
+M    ec-ng/ejercicios/Reasoning/SpatialReasoning/SpatialReasoningExercise.cs
+M    ec-ng/ejercicios/Reasoning/SpatialReasoning/SpatialReasoningElement.cs
+M    ec-ng/ejercicios/Reasoning/gui/SpatialReasoningPanel.cs
+M    ec-ng/ejercicios/Reasoning/Classify/ExerciceDemoClassi.cs
+M    ec-ng/ejercicios/BagItems/PanelBagItems.cs
+M    ec-ng/ejercicios/BagItems/BagItemsResults.cs
+M    ec-ng/ejercicios/DigitosDirectos/PanelDemoNumbers.cs
+M    ec-ng/ejercicios/DigitosDirectos/PanelDemoNumbersKeyboard.cs
+M    ec-ng/ejercicios/Balloons/BalloonsPanel.cs
+M    ec-ng/ejercicios/Exercise.cs
+M    ec-ng/ejercicios/Piramides/EjercicioPiramides.cs
+M    ec-ng/sesiones/SessionManager.cs
+M    ec-ng/sesiones/gui/SessionWindow.cs
+M    ec-ng/sesiones/xml-templates/user-sessions.xml
