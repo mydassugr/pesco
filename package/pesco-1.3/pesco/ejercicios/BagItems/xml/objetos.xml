@@ -1,0 +1,25 @@
+<objetos>
+	<objeto id="aspirina" genero="femenino" nombresingular="aspirina" nombreplural="aspirinas" nombresimple="aspirinas" img="pesco.ejercicios.BolsaObjetos.img.objetos.aspirina.png"/>
+	<objeto id="bicicleta" genero="femenino" nombresingular="bicicleta" nombreplural="bicicletas" nombresimple="bicicletas" img="pesco.ejercicios.BolsaObjetos.img.objetos.bicicleta.png"/>
+	<objeto id="camisa" genero="femenino" nombresingular="camisa" nombreplural="camisas" nombresimple="camisas" img="pesco.ejercicios.BolsaObjetos.img.objetos.camisa.png"/>
+	<objeto id="filete" genero="masculino" nombresingular="filete" nombreplural="filetes" nombresimple="filetes" img="pesco.ejercicios.BolsaObjetos.img.objetos.filete.png"/>
+	<objeto id="flor" genero="femenino" nombresingular="flor" nombreplural="flores" nombresiple="flores" img="pesco.ejercicios.BolsaObjetos.img.objetos.flor.png"/>
+	<objeto id="huevo" genero="masculino" nombresingular="huevo" nombreplural="huevos" nombresimple="huevos" img="pesco.ejercicios.BolsaObjetos.img.objetos.huevo.png"/>
+	<objeto id="juguete" genero="masculino" nombresingular="juguete" nombreplural="juguetes" nombresimpimg="juguetes" img="pesco.ejercicios.BolsaObjetos.img.objetos.juguete.png"/>
+	<objeto id="leche" genero="femenino" nombresingular="cartón de leche" nombreplural="cartones de leche" nombresimple="leche" img="pesco.ejercicios.BolsaObjetos.img.objetos.leche.png"/>
+	<objeto id="libro" genero="masculino" nombresingular="libro" nombreplural="libros" nombresimple="libros" img="pesco.ejercicios.BolsaObjetos.img.objetos.libro.png"/>
+	<objeto id="manzana" genero="femenino" nombresingular="manzana" nombreplural="manzanas" nombresimple="manzanas" img="pesco.ejercicios.BolsaObjetos.img.objetos.manzana.png"/>
+	<objeto id="moneda" genero="femenino" nombresingular="moneda" nombreplural="monedas" nombresimple="monedas" img="pesco.ejercicios.BolsaObjetos.img.objetos.moneda.png"/>
+	<objeto id="pan" genero="femenino" nombresingular="barra de pan" nombreplural="barras de pan" nombresimple="panes" img="pesco.ejercicios.BolsaObjetos.img.objetos.pan.png"/>
+	<objeto id="pantalon" genero="masculino" nombresingular="pantalón" nombreplural="pantalones" nombresimple="pantalones" img="pesco.ejercicios.BolsaObjetos.img.objetos.pantalon.png"/>
+	<objeto id="panyuelo" genero="masculino" nombresingular="paquete de pañuelos" nombreplural="paquetes de pañuelos" nombresimple="pañuelos" img="pesco.ejercicios.BolsaObjetos.img.objetos.panyuelo.png"/>
+	<objeto id="paraguas" genero="masculino" nombresingular="paraguas" nombreplural="paraguas" nombresimple="paraguas" img="pesco.ejercicios.BolsaObjetos.img.objetos.paraguas.png"/>
+	<objeto id="pera" genero="femenino" nombresingular="pera" nombreplural="peras" nombresimple="peras" img="pesco.ejercicios.BolsaObjetos.img.objetos.pera.png"/>
+	<objeto id="periodico" genero="masculino" nombresingular="periódico" nombreplural="periódicos" nombresimple="periódicos" img="pesco.ejercicios.BolsaObjetos.img.objetos.periodico.png"/>
+	<objeto id="pescado" genero="masculino" nombresingular="pescado" nombreplural="pescados" nombresimple="pescados" img="pesco.ejercicios.BolsaObjetos.img.objetos.pescado.png"/>
+	<objeto id="platano" genero="masculino" nombresingular="plátano" nombreplural="plátanos" nombresimple="plátanos" img="pesco.ejercicios.BolsaObjetos.img.objetos.platano.png"/>
+	<objeto id="refresco" genero="masculino" nombresingular="refresco" nombreplural="refrescos" nombresimple="refrescos" img="pesco.ejercicios.BolsaObjetos.img.objetos.refresco.png"/>
+	<objeto id="revista" genero="femenino" nombresingular="revista" nombreplural="revistas" nombresimple="revistas" img="pesco.ejercicios.BolsaObjetos.img.objetos.revista.png"/>
+	<objeto id="sombrero" genero="masculino" nombresingular="sombrero" nombreplural="sombreros" nombresimple="sombreros" img="pesco.ejercicios.BolsaObjetos.img.objetos.sombrero.png"/>
+	<objeto id="telefono" genero="masculino" nombresingular="teléfono móvil" nombreplural="teléfonos móviles" nombresimple="teléfonos" img="pesco.ejercicios.BolsaObjetos.img.objetos.telefono.png"/>
+</objetos>

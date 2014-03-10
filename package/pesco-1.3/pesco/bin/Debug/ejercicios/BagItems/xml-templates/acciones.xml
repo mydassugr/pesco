@@ -1,0 +1,9 @@
+<acciones>
+	<accion id="dar" texto="doy" tipo="eliminar"/>
+	<accion id="regalar" texto="regalo" tipo="eliminar"/>
+	<accion id="perder" texto="pierdo" tipo="eliminar"/>
+	<accion id="recoger" texto="recojo" tipo="agregar"/>
+	<accion id="coger" texto="cojo" tipo="agregar"/>
+	<accion id="comprar" texto="compro" tipo="agregar"/>
+	<accion id="encontrar" texto="encuentro" tipo="agregar"/>
+</acciones>

@@ -1,0 +1,387 @@
+VALID_CULTURES =   ar bg ca zh-CHS cs da de el en es fi fr he hu is it ja ko nl no pl pt ro ru hr sk sq sv th tr id uk be sl et lv lt fa vi hy eu mk af ka fo hi sw gu ta te kn mr gl kok ar-SA bg-BG ca-ES zh-TW cs-CZ da-DK de-DE el-GR en-US fi-FI fr-FR he-IL hu-HU is-IS it-IT ja-JP ko-KR nl-NL nb-NO pl-PL pt-BR ro-RO ru-RU hr-HR sk-SK sq-AL sv-SE th-TH tr-TR id-ID uk-UA be-BY sl-SI et-EE lv-LV lt-LT fa-IR vi-VN hy-AM eu-ES mk-MK af-ZA ka-GE fo-FO hi-IN sw-KE gu-IN ta-IN te-IN kn-IN mr-IN gl-ES kok-IN ar-IQ zh-CN de-CH en-GB es-MX fr-BE it-CH nl-BE nn-NO pt-PT sv-FI ar-EG zh-HK de-AT en-AU es-ES fr-CA ar-LY zh-SG de-LU en-CA es-GT fr-CH ar-DZ zh-MO en-NZ es-CR fr-LU ar-MA en-IE es-PA ar-TN en-ZA es-DO ar-OM es-VE ar-YE es-CO ar-SY es-PE ar-JO en-TT es-AR ar-LB en-ZW es-EC ar-KW en-PH es-CL ar-AE es-UY ar-BH es-PY ar-QA es-BO es-SV es-HN es-NI es-PR zh-CHT
+
+s2q=$(subst \ ,?,$1)
+q2s=$(subst ?,\ ,$1)
+# use this when result will be quoted
+unesc2=$(subst ?, ,$1)
+
+build_sources = $(FILES) $(GENERATED_FILES)
+build_sources_esc= $(call s2q,$(build_sources))
+# use unesc2, as build_sources_embed is quoted
+build_sources_embed= $(call unesc2,$(build_sources_esc:%='$(srcdir)/%'))
+
+comma__=,
+get_resource_name = $(firstword $(subst $(comma__), ,$1))
+get_culture =  $(lastword $(subst ., ,$(basename $1)))
+is_cultured_resource = $(and $(word 3,$(subst ., ,$1)), $(filter $(VALID_CULTURES),$(lastword $(subst ., ,$(basename $1)))))
+
+RESOURCES_ESC=$(call s2q,$(RESOURCES))
+
+build_resx_list = $(foreach res, $(RESOURCES_ESC), $(if $(filter %.resx, $(call get_resource_name,$(res))),$(res),))
+build_non_culture_resx_list = $(foreach res, $(build_resx_list),$(if $(call is_cultured_resource,$(call get_resource_name,$(res))),,$(res)))
+build_non_culture_others_list = $(foreach res, $(filter-out $(build_resx_list),$(RESOURCES_ESC)),$(if $(call is_cultured_resource,$(call get_resource_name,$(res))),,$(res)))
+build_others_list = $(build_non_culture_others_list)
+build_xamlg_list = $(filter %.xaml.g.cs, $(FILES))
+
+# resgen all .resx resources
+build_resx_files = $(foreach res, $(build_resx_list), $(call get_resource_name,$(res)))
+build_resx_resources_esc = $(build_resx_files:.resx=.resources)
+build_resx_resources = $(call q2s,$(build_resx_resources_esc))
+
+# embed resources for the main assembly
+build_resx_resources_hack = $(subst .resx,.resources, $(build_non_culture_resx_list))
+# use unesc2, as build_resx_resources_embed is quoted
+build_resx_resources_embed = $(call unesc2,$(build_resx_resources_hack:%='-resource:%'))
+build_others_files = $(call q2s,$(foreach res, $(build_others_list),$(call get_resource_name,$(res))))
+build_others_resources = $(build_others_files)
+# use unesc2, as build_others_resources_embed is quoted
+build_others_resources_embed = $(call unesc2,$(build_others_list:%='-resource:$(srcdir)/%'))
+
+build_resources = $(build_resx_resources) $(build_others_resources)
+build_resources_embed = $(build_resx_resources_embed) $(build_others_resources_embed)
+
+# -usesourcepath is available only for resgen2
+emit_resgen_target_1=$(call q2s,$1) : $(call q2s,$(subst .resources,.resx,$1)); cd '$$(shell dirname '$$<')' && MONO_IOMAP=drive $$(RESGEN) '$$(shell basename '$$<')' '$$(shell basename '$$@')'
+emit_resgen_target_2=$(call q2s,$1) : $(call q2s,$(subst .resources,.resx,$1)); MONO_IOMAP=drive $$(RESGEN) -usesourcepath '$$<' '$$@'
+
+emit_resgen_target=$(if $(filter resgen2,$(RESGEN)),$(emit_resgen_target_2),$(emit_resgen_target_1))
+emit_resgen_targets=$(foreach res,$(build_resx_resources_esc),$(eval $(call emit_resgen_target,$(res))))
+
+build_references_ref = $(call q2s,$(foreach ref, $(call s2q,$(REFERENCES)), $(if $(filter -pkg:%, $(ref)), $(ref), $(if $(filter -r:%, $(ref)), $(ref), -r:$(ref)))))
+build_references_ref += $(call q2s,$(foreach ref, $(call s2q,$(DLL_REFERENCES)), -r:$(ref)))
+build_references_ref += $(call q2s,$(foreach ref, $(call s2q,$(PROJECT_REFERENCES)), -r:$(ref)))
+
+s2q2s=$(call unesc2,$(call s2q,$1))
+cp_actual=test -z $1 || cp $1 $2
+cp=$(call cp_actual,'$(call s2q2s,$1)','$(call s2q2s,$2)')
+
+rm_actual=test -z '$1' || rm -f '$2'
+rm=$(call rm_actual,$(call s2q2s,$1),$(call s2q2s,$2)/$(shell basename '$(call s2q2s,$1)'))
+
+EXTRA_DIST += $(build_sources) $(build_resx_files) $(build_others_files) $(ASSEMBLY_WRAPPER_IN) $(EXTRAS) $(DATA_FILES) $(build_culture_res_files)
+CLEANFILES += $(ASSEMBLY) $(ASSEMBLY).mdb $(BINARIES) $(build_resx_resources) $(build_satellite_assembly_list)
+DISTCLEANFILES = $(GENERATED_FILES) $(pc_files) $(BUILD_DIR)/*
+
+programfilesdir = $(pkglibdir)
+programfiles_DATA = $(ASSEMBLY)
+bin_SCRIPTS = $(BINARIES)
+
+programfilesejerciciosreasoninglogicalseriesxmltemplatesdir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/xml-templates
+programfilesejerciciosreasoninglogicalseriesxmltemplates_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_XML_TEMPLATES)
+programfilesejerciciosreasoningclassifyfiguresseries40dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series40
+programfilesejerciciosreasoningclassifyfiguresseries40_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES40)
+programfilesejerciciosreasoningclassifyfiguresseries41dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series41
+programfilesejerciciosreasoningclassifyfiguresseries41_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES41)
+programfilesejerciciosreasoningclassifyfiguresseries42dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series42
+programfilesejerciciosreasoningclassifyfiguresseries42_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES42)
+programfilesejerciciosreasoningclassifyfiguresseries43dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series43
+programfilesejerciciosreasoningclassifyfiguresseries43_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES43)
+programfilesejerciciosreasoningclassifyfiguresseries44dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series44
+programfilesejerciciosreasoningclassifyfiguresseries44_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES44)
+programfilesejerciciosreasoningclassifyfiguresseries45dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series45
+programfilesejerciciosreasoningclassifyfiguresseries45_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES45)
+programfilesejerciciosreasoningclassifyfiguresseries46dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series46
+programfilesejerciciosreasoningclassifyfiguresseries46_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES46)
+programfilesejerciciosreasoningclassifyfiguresseries47dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series47
+programfilesejerciciosreasoningclassifyfiguresseries47_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES47)
+programfilesejerciciosreasoningclassifyfiguresseries48dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series48
+programfilesejerciciosreasoningclassifyfiguresseries48_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES48)
+programfilesejerciciosreasoningclassifyfiguresseries49dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series49
+programfilesejerciciosreasoningclassifyfiguresseries49_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES49)
+programfilesejerciciosresourcesimgwordlistdir = @libdir@/@PACKAGE@/ejercicios/resources/img/wordlist
+programfilesejerciciosresourcesimgwordlist_DATA = $(PROGRAMFILES_EJERCICIOS_RESOURCES_IMG_WORDLIST)
+programfilessesionesxmltemplatesdir = @libdir@/@PACKAGE@/sesiones/xml-templates
+programfilessesionesxmltemplates_DATA = $(PROGRAMFILES_SESIONES_XML_TEMPLATES)
+programfilesguiwelcomeimgdir = @libdir@/@PACKAGE@/gui/welcome/img
+programfilesguiwelcomeimg_DATA = $(PROGRAMFILES_GUI_WELCOME_IMG)
+programfilesejercicioslostitemsimgitemsdir = @libdir@/@PACKAGE@/ejercicios/LostItems/img/items
+programfilesejercicioslostitemsimgitems_DATA = $(PROGRAMFILES_EJERCICIOS_LOSTITEMS_IMG_ITEMS)
+programfilesejerciciosreasoningclassifyfiguresseries50dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series50
+programfilesejerciciosreasoningclassifyfiguresseries50_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES50)
+programfilesejerciciosreasoningclassifyfiguresseries51dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series51
+programfilesejerciciosreasoningclassifyfiguresseries51_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES51)
+programfilesejerciciosreasoningclassifyfiguresseries52dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series52
+programfilesejerciciosreasoningclassifyfiguresseries52_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES52)
+programfilesejerciciosreasoningclassifyfiguresseries53dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series53
+programfilesejerciciosreasoningclassifyfiguresseries53_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES53)
+programfilesejerciciosresourcesimgreasoningdir = @libdir@/@PACKAGE@/ejercicios/resources/img/reasoning
+programfilesejerciciosresourcesimgreasoning_DATA = $(PROGRAMFILES_EJERCICIOS_RESOURCES_IMG_REASONING)
+programfilesejerciciosreasoninglogicalseriesfiguresseries3dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series3
+programfilesejerciciosreasoninglogicalseriesfiguresseries3_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES3)
+programfilesejerciciosreasoningsemanticseriesxmltemplatesdir = @libdir@/@PACKAGE@/ejercicios/Reasoning/SemanticSeries/xml-templates
+programfilesejerciciosreasoningsemanticseriesxmltemplates_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_SEMANTICSERIES_XML_TEMPLATES)
+programfilesejerciciosreasoninglogicalseriesfiguresseries5dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series5
+programfilesejerciciosreasoninglogicalseriesfiguresseries5_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES5)
+programfilesejerciciosreasoningclassifyfiguresseries39dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series39
+programfilesejerciciosreasoningclassifyfiguresseries39_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES39)
+programfilesejerciciosreasoninglogicalseriesfiguresseries7dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series7
+programfilesejerciciosreasoninglogicalseriesfiguresseries7_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES7)
+programfilesejerciciosreasoninglogicalseriesfiguresseries8dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series8
+programfilesejerciciosreasoninglogicalseriesfiguresseries8_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES8)
+programfilesejerciciosresourcesimgitemsdir = @libdir@/@PACKAGE@/ejercicios/resources/img/items
+programfilesejerciciosresourcesimgitems_DATA = $(PROGRAMFILES_EJERCICIOS_RESOURCES_IMG_ITEMS)
+programfilesejerciciosreasoninglogicalseriesfiguresseries2dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series2
+programfilesejerciciosreasoninglogicalseriesfiguresseries2_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES2)
+programfilesejerciciosreasoninglogicalseriesfiguresseries4dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series4
+programfilesejerciciosreasoninglogicalseriesfiguresseries4_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES4)
+programfilesejerciciosresourcesimgtasklistdir = @libdir@/@PACKAGE@/ejercicios/resources/img/tasklist
+programfilesejerciciosresourcesimgtasklist_DATA = $(PROGRAMFILES_EJERCICIOS_RESOURCES_IMG_TASKLIST)
+programfilesejerciciosreasoninglogicalseriesfiguresseries6dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series6
+programfilesejerciciosreasoninglogicalseriesfiguresseries6_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES6)
+programfilesejerciciosreasoningclassifyxmltemplatesdir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/xml-templates
+programfilesejerciciosreasoningclassifyxmltemplates_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_XML_TEMPLATES)
+programfilesejerciciosreasoningspatialreasoningfiguresdir = @libdir@/@PACKAGE@/ejercicios/Reasoning/SpatialReasoning/figures
+programfilesejerciciosreasoningspatialreasoningfigures_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_SPATIALREASONING_FIGURES)
+programfilesejerciciosreasoninglogicalseriesfiguresseries27dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series27
+programfilesejerciciosreasoninglogicalseriesfiguresseries27_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES27)
+programfilesejerciciosreasoninglogicalseriesfiguresseries12dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series12
+programfilesejerciciosreasoninglogicalseriesfiguresseries12_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES12)
+programfilesejerciciosreasoninglogicalseriesfiguresseries29dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series29
+programfilesejerciciosreasoninglogicalseriesfiguresseries29_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES29)
+programfilesejerciciosresourcesimgshopsdir = @libdir@/@PACKAGE@/ejercicios/resources/img/shops
+programfilesejerciciosresourcesimgshops_DATA = $(PROGRAMFILES_EJERCICIOS_RESOURCES_IMG_SHOPS)
+programfilescuestionarioplantillasdir = @libdir@/@PACKAGE@/cuestionario/plantillas
+programfilescuestionarioplantillas_DATA = $(PROGRAMFILES_CUESTIONARIO_PLANTILLAS)
+programfilesejerciciosreasoningclassifyfiguresseries29dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series29
+programfilesejerciciosreasoningclassifyfiguresseries29_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES29)
+programfilesejercicioslostitemsimgdir = @libdir@/@PACKAGE@/ejercicios/LostItems/img
+programfilesejercicioslostitemsimg_DATA = $(PROGRAMFILES_EJERCICIOS_LOSTITEMS_IMG)
+programfilesejerciciosreasoninglogicalseriesfiguresseries56dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series56
+programfilesejerciciosreasoninglogicalseriesfiguresseries56_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES56)
+programfilesejerciciosreasoninglogicalseriesfiguresseries58dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series58
+programfilesejerciciosreasoninglogicalseriesfiguresseries58_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES58)
+programfilesejerciciosgiftsshoppingimgdir = @libdir@/@PACKAGE@/ejercicios/GiftsShopping/img
+programfilesejerciciosgiftsshoppingimg_DATA = $(PROGRAMFILES_EJERCICIOS_GIFTSSHOPPING_IMG)
+programfilesejerciciosreasoninglogicalseriesfiguresseries36dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series36
+programfilesejerciciosreasoninglogicalseriesfiguresseries36_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES36)
+programfilesejerciciosreasoninglogicalseriesfiguresseries22dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series22
+programfilesejerciciosreasoninglogicalseriesfiguresseries22_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES22)
+programfilesejerciciosreasoninglogicalseriesfiguresseries39dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series39
+programfilesejerciciosreasoninglogicalseriesfiguresseries39_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES39)
+programfilesejerciciosreasoninglogicalseriesfiguresseries10dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series10
+programfilesejerciciosreasoninglogicalseriesfiguresseries10_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES10)
+programfilesejerciciosreasoninglogicalseriesfiguresseries11dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series11
+programfilesejerciciosreasoninglogicalseriesfiguresseries11_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES11)
+programfilesejerciciosdigitosdirectosxmltemplatesdir = @libdir@/@PACKAGE@/ejercicios/DigitosDirectos/xml-templates
+programfilesejerciciosdigitosdirectosxmltemplates_DATA = $(PROGRAMFILES_EJERCICIOS_DIGITOSDIRECTOS_XML_TEMPLATES)
+programfilesejerciciosreasoninglogicalseriesfiguresseries13dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series13
+programfilesejerciciosreasoninglogicalseriesfiguresseries13_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES13)
+programfilesejerciciosreasoninglogicalseriesfiguresseries14dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series14
+programfilesejerciciosreasoninglogicalseriesfiguresseries14_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES14)
+programfilesejerciciosreasoninglogicalseriesfiguresseries15dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series15
+programfilesejerciciosreasoninglogicalseriesfiguresseries15_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES15)
+programfilesejerciciosreasoninglogicalseriesfiguresseries16dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series16
+programfilesejerciciosreasoninglogicalseriesfiguresseries16_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES16)
+programfilesejerciciosreasoninglogicalseriesfiguresseries17dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series17
+programfilesejerciciosreasoninglogicalseriesfiguresseries17_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES17)
+programfilesejerciciosreasoninglogicalseriesfiguresseries18dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series18
+programfilesejerciciosreasoninglogicalseriesfiguresseries18_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES18)
+programfilesejerciciosreasoninglogicalseriesfiguresseries19dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series19
+programfilesejerciciosreasoninglogicalseriesfiguresseries19_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES19)
+programfilesejercicioslostitemsxmltemplatesdir = @libdir@/@PACKAGE@/ejercicios/LostItems/xml-templates
+programfilesejercicioslostitemsxmltemplates_DATA = $(PROGRAMFILES_EJERCICIOS_LOSTITEMS_XML_TEMPLATES)
+programfilesejerciciosreasoninglogicalseriesfiguresseries30dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series30
+programfilesejerciciosreasoninglogicalseriesfiguresseries30_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES30)
+programfilesejerciciosreasoninglogicalseriesfiguresseries46dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series46
+programfilesejerciciosreasoninglogicalseriesfiguresseries46_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES46)
+programfilesejerciciosreasoninglogicalseriesfiguresseries20dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series20
+programfilesejerciciosreasoninglogicalseriesfiguresseries20_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES20)
+programfilesejerciciosreasoninglogicalseriesfiguresseries21dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series21
+programfilesejerciciosreasoninglogicalseriesfiguresseries21_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES21)
+programfilesejerciciosreasoninglogicalseriesfiguresseries1dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series1
+programfilesejerciciosreasoninglogicalseriesfiguresseries1_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES1)
+programfilesejerciciosreasoninglogicalseriesfiguresseries23dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series23
+programfilesejerciciosreasoninglogicalseriesfiguresseries23_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES23)
+programfilesejerciciosreasoninglogicalseriesfiguresseries24dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series24
+programfilesejerciciosreasoninglogicalseriesfiguresseries24_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES24)
+programfilesejerciciosreasoninglogicalseriesfiguresseries25dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series25
+programfilesejerciciosreasoninglogicalseriesfiguresseries25_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES25)
+programfilesejerciciosreasoninglogicalseriesfiguresseries26dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series26
+programfilesejerciciosreasoninglogicalseriesfiguresseries26_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES26)
+programfilesejerciciospackagedeliveringxmltemplatesdir = @libdir@/@PACKAGE@/ejercicios/PackageDelivering/xml-templates
+programfilesejerciciospackagedeliveringxmltemplates_DATA = $(PROGRAMFILES_EJERCICIOS_PACKAGEDELIVERING_XML_TEMPLATES)
+programfilesejerciciosreasoninglogicalseriesfiguresseries28dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series28
+programfilesejerciciosreasoninglogicalseriesfiguresseries28_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES28)
+programfilesejerciciosresourcesimgdir = @libdir@/@PACKAGE@/ejercicios/resources/img
+programfilesejerciciosresourcesimg_DATA = $(PROGRAMFILES_EJERCICIOS_RESOURCES_IMG)
+programfilesejerciciosbagitemsxmltemplatesdir = @libdir@/@PACKAGE@/ejercicios/BagItems/xml-templates
+programfilesejerciciosbagitemsxmltemplates_DATA = $(PROGRAMFILES_EJERCICIOS_BAGITEMS_XML_TEMPLATES)
+programfilesejerciciosresourcesimgclassifyobjectsdir = @libdir@/@PACKAGE@/ejercicios/resources/img/classifyobjects
+programfilesejerciciosresourcesimgclassifyobjects_DATA = $(PROGRAMFILES_EJERCICIOS_RESOURCES_IMG_CLASSIFYOBJECTS)
+programfilesguidir = @libdir@/@PACKAGE@/gui
+programfilesgui_DATA = $(PROGRAMFILES_GUI)
+programfilesejercicioslostitemsimgroomsdecorationdir = @libdir@/@PACKAGE@/ejercicios/LostItems/img/rooms/decoration
+programfilesejercicioslostitemsimgroomsdecoration_DATA = $(PROGRAMFILES_EJERCICIOS_LOSTITEMS_IMG_ROOMS_DECORATION)
+programfilesejerciciospiramidesxmltemplatesdir = @libdir@/@PACKAGE@/ejercicios/Piramides/xml-templates
+programfilesejerciciospiramidesxmltemplates_DATA = $(PROGRAMFILES_EJERCICIOS_PIRAMIDES_XML_TEMPLATES)
+programfilesejerciciosreasoninglogicalseriesfiguresseries43dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series43
+programfilesejerciciosreasoninglogicalseriesfiguresseries43_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES43)
+programfilesejerciciosreasoninglogicalseriesfiguresseries57dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series57
+programfilesejerciciosreasoninglogicalseriesfiguresseries57_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES57)
+programfilesejerciciosballoonsimgdir = @libdir@/@PACKAGE@/ejercicios/Balloons/img
+programfilesejerciciosballoonsimg_DATA = $(PROGRAMFILES_EJERCICIOS_BALLOONS_IMG)
+programfilesejerciciosreasoninglogicalseriesfiguresseries31dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series31
+programfilesejerciciosreasoninglogicalseriesfiguresseries31_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES31)
+programfilesejerciciosreasoninglogicalseriesfiguresseries32dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series32
+programfilesejerciciosreasoninglogicalseriesfiguresseries32_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES32)
+programfilesejerciciosreasoninglogicalseriesfiguresseries33dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series33
+programfilesejerciciosreasoninglogicalseriesfiguresseries33_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES33)
+programfilesejerciciosreasoninglogicalseriesfiguresseries34dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series34
+programfilesejerciciosreasoninglogicalseriesfiguresseries34_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES34)
+programfilesejerciciosreasoninglogicalseriesfiguresseries35dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series35
+programfilesejerciciosreasoninglogicalseriesfiguresseries35_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES35)
+programfilesejerciciosreasoningclassifyfiguresseries10dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series10
+programfilesejerciciosreasoningclassifyfiguresseries10_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES10)
+programfilesejerciciosreasoningclassifyfiguresseries11dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series11
+programfilesejerciciosreasoningclassifyfiguresseries11_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES11)
+programfilesejerciciosreasoningclassifyfiguresseries12dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series12
+programfilesejerciciosreasoningclassifyfiguresseries12_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES12)
+programfilesejerciciosreasoningclassifyfiguresseries13dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series13
+programfilesejerciciosreasoningclassifyfiguresseries13_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES13)
+programfilesejerciciosreasoningclassifyfiguresseries14dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series14
+programfilesejerciciosreasoningclassifyfiguresseries14_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES14)
+programfilesejerciciosreasoningclassifyfiguresseries15dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series15
+programfilesejerciciosreasoningclassifyfiguresseries15_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES15)
+programfilesejerciciosreasoningclassifyfiguresseries16dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series16
+programfilesejerciciosreasoningclassifyfiguresseries16_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES16)
+programfilesejerciciosreasoningclassifyfiguresseries17dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series17
+programfilesejerciciosreasoningclassifyfiguresseries17_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES17)
+programfilesejerciciosreasoningclassifyfiguresseries18dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series18
+programfilesejerciciosreasoningclassifyfiguresseries18_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES18)
+programfilesejerciciosreasoningclassifyfiguresseries19dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series19
+programfilesejerciciosreasoningclassifyfiguresseries19_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES19)
+programfilesejerciciosreasoningspatialreasoningxmltemplatesdir = @libdir@/@PACKAGE@/ejercicios/Reasoning/SpatialReasoning/xml-templates
+programfilesejerciciosreasoningspatialreasoningxmltemplates_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_SPATIALREASONING_XML_TEMPLATES)
+programfilesejerciciosreasoninglogicalseriesfiguresseries40dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series40
+programfilesejerciciosreasoninglogicalseriesfiguresseries40_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES40)
+programfilesejerciciosreasoninglogicalseriesfiguresseries42dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series42
+programfilesejerciciosreasoninglogicalseriesfiguresseries42_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES42)
+programfilesejerciciosresourcesimgnumersvowelsdir = @libdir@/@PACKAGE@/ejercicios/resources/img/numersvowels
+programfilesejerciciosresourcesimgnumersvowels_DATA = $(PROGRAMFILES_EJERCICIOS_RESOURCES_IMG_NUMERSVOWELS)
+programfilesejerciciosreasoninglogicalseriesfiguresseries44dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series44
+programfilesejerciciosreasoninglogicalseriesfiguresseries44_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES44)
+programfilesejerciciosreasoningclassifyfiguresseries20dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series20
+programfilesejerciciosreasoningclassifyfiguresseries20_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES20)
+programfilesejerciciosreasoningclassifyfiguresseries21dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series21
+programfilesejerciciosreasoningclassifyfiguresseries21_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES21)
+programfilesejerciciosreasoningclassifyfiguresseries22dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series22
+programfilesejerciciosreasoningclassifyfiguresseries22_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES22)
+programfilesejerciciosreasoningclassifyfiguresseries23dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series23
+programfilesejerciciosreasoningclassifyfiguresseries23_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES23)
+programfilesejerciciosreasoningclassifyfiguresseries24dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series24
+programfilesejerciciosreasoningclassifyfiguresseries24_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES24)
+programfilesejerciciosreasoningclassifyfiguresseries25dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series25
+programfilesejerciciosreasoningclassifyfiguresseries25_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES25)
+programfilesejerciciosreasoningclassifyfiguresseries26dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series26
+programfilesejerciciosreasoningclassifyfiguresseries26_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES26)
+programfilesejerciciosreasoningclassifyfiguresseries27dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series27
+programfilesejerciciosreasoningclassifyfiguresseries27_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES27)
+programfilesejerciciosreasoningclassifyfiguresseries28dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series28
+programfilesejerciciosreasoningclassifyfiguresseries28_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES28)
+programfilesejerciciosballoonsdemodir = @libdir@/@PACKAGE@/ejercicios/Balloons/demo
+programfilesejerciciosballoonsdemo_DATA = $(PROGRAMFILES_EJERCICIOS_BALLOONS_DEMO)
+programfilesejercicioslostitemsimghalldir = @libdir@/@PACKAGE@/ejercicios/LostItems/img/hall
+programfilesejercicioslostitemsimghall_DATA = $(PROGRAMFILES_EJERCICIOS_LOSTITEMS_IMG_HALL)
+programfilesejerciciosreasoningclassifyfiguresseries1dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series1
+programfilesejerciciosreasoningclassifyfiguresseries1_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES1)
+programfilesejerciciosreasoningclassifyfiguresseries2dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series2
+programfilesejerciciosreasoningclassifyfiguresseries2_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES2)
+programfilesejerciciosreasoningclassifyfiguresseries3dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series3
+programfilesejerciciosreasoningclassifyfiguresseries3_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES3)
+programfilesejerciciosreasoningclassifyfiguresseries4dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series4
+programfilesejerciciosreasoningclassifyfiguresseries4_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES4)
+programfilesejerciciosreasoningclassifyfiguresseries5dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series5
+programfilesejerciciosreasoningclassifyfiguresseries5_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES5)
+programfilesejerciciosreasoningclassifyfiguresseries6dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series6
+programfilesejerciciosreasoningclassifyfiguresseries6_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES6)
+programfilesejerciciosreasoningclassifyfiguresseries7dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series7
+programfilesejerciciosreasoningclassifyfiguresseries7_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES7)
+programfilesejerciciosreasoningclassifyfiguresseries8dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series8
+programfilesejerciciosreasoningclassifyfiguresseries8_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES8)
+programfilesejerciciosreasoningclassifyfiguresseries9dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series9
+programfilesejerciciosreasoningclassifyfiguresseries9_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES9)
+programfilesejerciciosreasoninglogicalseriesfiguresseries9dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series9
+programfilesejerciciosreasoninglogicalseriesfiguresseries9_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES9)
+programfilesejerciciospiramidesfigurasdir = @libdir@/@PACKAGE@/ejercicios/Piramides/figuras
+programfilesejerciciospiramidesfiguras_DATA = $(PROGRAMFILES_EJERCICIOS_PIRAMIDES_FIGURAS)
+programfilesejerciciosreasoninglogicalseriesfiguresseries51dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series51
+programfilesejerciciosreasoninglogicalseriesfiguresseries51_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES51)
+programfilesejerciciosreasoninglogicalseriesfiguresseries52dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series52
+programfilesejerciciosreasoninglogicalseriesfiguresseries52_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES52)
+programfilesejerciciosreasoninglogicalseriesfiguresseries53dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series53
+programfilesejerciciosreasoninglogicalseriesfiguresseries53_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES53)
+programfilesejerciciosreasoninglogicalseriesfiguresseries55dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/LogicalSeries/figures/series55
+programfilesejerciciosreasoninglogicalseriesfiguresseries55_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_LOGICALSERIES_FIGURES_SERIES55)
+programfilesejerciciosreasoningclassifyfiguresseries30dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series30
+programfilesejerciciosreasoningclassifyfiguresseries30_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES30)
+programfilesejerciciosreasoningclassifyfiguresseries31dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series31
+programfilesejerciciosreasoningclassifyfiguresseries31_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES31)
+programfilesejerciciosreasoningclassifyfiguresseries32dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series32
+programfilesejerciciosreasoningclassifyfiguresseries32_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES32)
+programfilesejerciciosreasoningclassifyfiguresseries33dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series33
+programfilesejerciciosreasoningclassifyfiguresseries33_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES33)
+programfilesejerciciosreasoningclassifyfiguresseries34dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series34
+programfilesejerciciosreasoningclassifyfiguresseries34_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES34)
+programfilesejerciciosreasoningclassifyfiguresseries35dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series35
+programfilesejerciciosreasoningclassifyfiguresseries35_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES35)
+programfilesejerciciosreasoningclassifyfiguresseries36dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series36
+programfilesejerciciosreasoningclassifyfiguresseries36_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES36)
+programfilesejerciciosreasoningclassifyfiguresseries37dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series37
+programfilesejerciciosreasoningclassifyfiguresseries37_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES37)
+programfilesejerciciosreasoningclassifyfiguresseries38dir = @libdir@/@PACKAGE@/ejercicios/Reasoning/Classify/figures/series38
+programfilesejerciciosreasoningclassifyfiguresseries38_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_CLASSIFY_FIGURES_SERIES38)
+programfilesejerciciosgiftsshoppingxmltemplatesdir = @libdir@/@PACKAGE@/ejercicios/GiftsShopping/xml-templates
+programfilesejerciciosgiftsshoppingxmltemplates_DATA = $(PROGRAMFILES_EJERCICIOS_GIFTSSHOPPING_XML_TEMPLATES)
+programfilesdir = @libdir@/@PACKAGE@
+programfiles_DATA = $(PROGRAMFILES)
+programfilesejerciciosreasoningsemanticanalogiesxmltemplatesdir = @libdir@/@PACKAGE@/ejercicios/Reasoning/SemanticAnalogies/xml-templates
+programfilesejerciciosreasoningsemanticanalogiesxmltemplates_DATA = $(PROGRAMFILES_EJERCICIOS_REASONING_SEMANTICANALOGIES_XML_TEMPLATES)
+programfilesejercicioslostitemsimgroomsdir = @libdir@/@PACKAGE@/ejercicios/LostItems/img/rooms
+programfilesejercicioslostitemsimgrooms_DATA = $(PROGRAMFILES_EJERCICIOS_LOSTITEMS_IMG_ROOMS)
+
+
+# macros
+
+# $(call emit-deploy-target,deploy-variable-name)
+define emit-deploy-target
+$($1): $($1_SOURCE)
+	mkdir -p '$$(shell dirname '$$@')'
+	cp '$$<' '$$@'
+endef
+
+# $(call emit-deploy-wrapper,wrapper-variable-name,wrapper-sourcefile,x)
+# assumes that for a wrapper foo.pc its source template is foo.pc.in
+# if $3 is non-empty then wrapper is marked exec
+define emit-deploy-wrapper
+$($1): $2 
+	mkdir -p '$$(shell dirname '$$@')'
+	cp '$$<' '$$@'
+	$(if $3,chmod +x '$$@')
+
+endef
+
+# generating satellite assemblies
+
+culture_resources = $(foreach res, $(RESOURCES_ESC), $(if $(call is_cultured_resource,$(call get_resource_name, $(res))),$(res)))
+cultures = $(sort $(foreach res, $(culture_resources), $(call get_culture,$(call get_resource_name,$(res)))))
+culture_resource_dependencies = $(call q2s,$(BUILD_DIR)/$1/$(SATELLITE_ASSEMBLY_NAME): $(subst .resx,.resources,$2))
+culture_resource_commandlines = $(call unesc2,cmd_line_satellite_$1 += '/embed:$(subst .resx,.resources,$2)')
+build_satellite_assembly_list = $(call q2s,$(cultures:%=$(BUILD_DIR)/%/$(SATELLITE_ASSEMBLY_NAME)))
+build_culture_res_files = $(call q2s,$(foreach res, $(culture_resources),$(call get_resource_name,$(res))))
+install_satellite_assembly_list = $(subst $(BUILD_DIR),$(DESTDIR)$(libdir)/$(PACKAGE),$(build_satellite_assembly_list))
+
+$(eval $(foreach res, $(culture_resources), $(eval $(call culture_resource_dependencies,$(call get_culture,$(call get_resource_name,$(res))),$(call get_resource_name,$(res))))))
+$(eval $(foreach res, $(culture_resources), $(eval $(call culture_resource_commandlines,$(call get_culture,$(call get_resource_name,$(res))),$(res)))))
+
+$(build_satellite_assembly_list): $(BUILD_DIR)/%/$(SATELLITE_ASSEMBLY_NAME):
+	mkdir -p '$(@D)'
+	$(AL) -out:'$@' -culture:$* -t:lib $(cmd_line_satellite_$*)
+
+$(install_satellite_assembly_list):
+	mkdir -p '$(@D)'
+	cp $(subst $(DESTDIR)$(libdir)/$(PACKAGE), $(BUILD_DIR), $@) $@
+
+install-satellite-assemblies: $(install_satellite_assembly_list)
+	
+uninstall-satellite-assemblies:
+	rm -rf $(install_satellite_assembly_list)

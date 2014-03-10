@@ -1,0 +1,12 @@
+<quienes>
+	<quien id="panadero" texto="al panadero"/>
+	<quien id="farmaceutico" texto="al farmaceutico"/>
+	<quien id="patos" texto="a los patos"/>
+	<quien id="librero" texto="al librero"/>
+	<quien id="cajero" texto="al cajero"/>
+	<quien id="carnicero" texto="al carnicero"/>
+	<quien id="pescadero" texto="al pescadero"/>
+	<quien id="frutero" texto="al frutero"/>
+	<quien id="gorilas" texto="a los gorilas"/>
+	<quien id="vendedor" texto="al vendedor"/>
+</quienes>

@@ -1,0 +1,43 @@
+Ana - 10 agosto 2010
++ Agregada prototipo de lista de sesiones.
++ Agregado boton para ver ventana de resultados.
++ Agregado boton para ver pregunta.
++ Cambiado el icono del botón de nuevo usuario en pantalla inicio.
++ Mejorado mensaje de inicio
+- Eliminado bug que no finalizaba la aplicación aunque todas las ventanas hubieran sido cerradas.
+
+Generado paquete .deb y probado en guadalinex.
+
+Ana - 11 agosto 2010
++ Modificado estilos árboles para añadirles filas en colores alternativos
++ Agregado a la pantalla de inicio el evento para lanzar la ventana de registro del nuevo usuario
++ Agregado evento de doble click al árbol para mostrar stub de ejercicio
+
+Ana & Luz - 12 agosto 2010
++ Soporte basico a cuestionarios, incluyendo:
+	+ Serializacion y deserializacion basada en XML
+	+ Integracion con la interfaz
+
+Ana - 13 agosto 2010
++ Mejoras gestión cuestionarios
+	+ Interfaz:
+		+ Actualización de botones en la ventana del cuestionario
+		+ Control de repetición del cuestionario (i.e, si el usuario quiere repetir el test)
+	+ Clase cuestionario:
+		+ Generador de cuestionario "plantilla" (Metodo de clase GenerarCuestionario)
+		+ Correcion de bug en metodo setRespuesta(...) que permitia seleccionar más de una respuesta poor test
+		+ Método para resetear el cuestionario
+		+ Método para calcular el 
+	+ Clase Pregunta:
+		+ Método de clase para generar preguntas "plantilla"
+	+ Refactorización del código para eliminar código replicado en la clase VentanaPregunta:
+		+ Metodo actualizarListaPreguntas
+		+ Método almacenarRespuesta
+	+ Mejora en la documentación
+	
+Generado paquete .deb y probado en guadalinex
+
+Ana - 24 agsoto 2010
++ Clase GtkUtil con funcionalidad común para manipular la interfaz
++ Agregada hoja de estilos a los XML para facilitar su visualización en el navegador web
+		

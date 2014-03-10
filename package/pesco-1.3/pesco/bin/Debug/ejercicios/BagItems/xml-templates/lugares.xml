@@ -1,0 +1,76 @@
+<lugares>	
+	<lugar id="casa" nombre="casa" img="pesco.ejercicios.BagItems.img.lugares.casa.png">
+		<objeto accionid="coger" objetoid="moneda" quien=""/>
+		<objeto accionid="coger" objetoid="telefono" quien=""/>
+		<objeto accionid="coger" objetoid="paraguas" quien=""/>
+		<objeto accionid="coger" objetoid="sombrero" quien=""/>
+		<objeto accionid="coger" objetoid="aspirina" quien=""/>
+		<objeto accionid="coger" objetoid="libro" quien=""/>		
+	</lugar>
+	<lugar id="panaderia" nombre="la panadería" img="pesco.ejercicios.BagItems.img.lugares.panaderia.png">
+		<objeto accionid="comprar" objetoid="pan" quien="panadero"/>
+		<objeto accionid="dar" objetoid="moneda" quien="panadero"/>
+		<objeto accionid="dar" objetoid="aspirina" quien="panadero"/>
+	</lugar>
+	<lugar id="parque" nombre="el parque" img="pesco.ejercicios.BagItems.img.lugares.parque.png">
+		<objeto accionid="encontrar" objetoid="flor" quien=""/>
+		<objeto accionid="dar" objetoid="pera" quien="patos"/>
+		<objeto accionid="dar" objetoid="platano" quien="patos"/>
+		<objeto accionid="dar" objetoid="manzana" quien="patos"/>
+		<objeto accionid="dar" objetoid="pan" quien="patos"/>
+	</lugar>
+	<lugar id="farmacia" nombre="la farmacia" img="pesco.ejercicios.BagItems.img.lugares.farmacia.png">
+		<objeto accionid="comprar" objetoid="aspirina" quien="farmaceutico"/>
+		<objeto accionid="dar" objetoid="moneda" quien="farmaceutico"/>
+	</lugar>
+	<lugar id="libreria" nombre="la librería" img="pesco.ejercicios.BagItems.img.lugares.libreria.png">
+		<objeto accionid="comprar" objetoid="libro" quien="librero"/>
+		<objeto accionid="dar" objetoid="moneda" quien="librero"/>
+		<objeto accionid="dar" objetoid="aspirina" quien="librero"/>
+	</lugar>
+	<lugar id="fruteria" nombre="la frutería" img="pesco.ejercicios.BagItems.img.lugares.fruteria.png">
+		<objeto accionid="comprar" objetoid="manzana" quien="frutero"/>
+		<objeto accionid="comprar" objetoid="pera" quien="frutero"/>
+		<objeto accionid="comprar" objetoid="platano" quien="frutero"/>
+		<objeto accionid="dar" objetoid="moneda" quien="frutero"/>
+		<objeto accionid="dar" objetoid="aspirina" quien="frutero"/>
+		<objeto accionid="perder" objetoid="telefono" quien=""/>
+	</lugar>
+	<lugar id="tiendaderopa" nombre="la tienda de ropa" img="pesco.ejercicios.BagItems.img.lugares.tienda_de_ropa.png">
+		<objeto accionid="comprar" objetoid="pantalon" quien="vendedor"/>
+		<objeto accionid="comprar" objetoid="camisa" quien="vendedor"/>
+		<objeto accionid="dar" objetoid="moneda" quien="vendedor"/>
+		<objeto accionid="perder" objetoid="telefono" quien=""/>		
+	</lugar>
+	<lugar id="supermercado" nombre="el supermercado" img="pesco.ejercicios.BagItems.img.lugares.supermercado.png">
+		<objeto accionid="comprar" objetoid="leche" quien=""/>
+		<objeto accionid="comprar" objetoid="huevo" quien=""/>
+		<objeto accionid="dar" objetoid="moneda" quien="cajero"/>
+		<objeto accionid="perder" objetoid="telefono" quien=""/>		
+	</lugar>
+	<lugar id="kiosko" nombre="el kiosco" img="pesco.ejercicios.BagItems.img.lugares.kiosco.png">
+		<objeto accionid="comprar" objetoid="periodico" quien="kioskero"/>
+		<objeto accionid="comprar" objetoid="revista" quien="kioskero"/>
+		<objeto accionid="dar" objetoid="moneda" quien="kioskero"/>
+		<objeto accionid="dar" objetoid="aspirina" quien="kioskero"/>
+		<objeto accionid="dar" objetoid="libro" quien="kioskero"/>	
+	</lugar>
+	<lugar id="jugueteria" nombre="la juguetería" img="pesco.ejercicios.BagItems.img.lugares.jugueteria.png">
+		<objeto accionid="comprar" objetoid="bicicleta" quien="vendedor"/>
+		<objeto accionid="comprar" objetoid="juguete" quien="vendedor"/>
+		<objeto accionid="dar" objetoid="moneda" quien="vendedor"/>
+	</lugar>
+	<lugar id="pescaderia" nombre="la pescadería" img="pesco.ejercicios.BagItems.img.lugares.pescaderia.png">
+		<objeto accionid="comprar" objetoid="pescado" quien="pescadero"/>
+		<objeto accionid="dar" objetoid="moneda" quien="pescadero"/>
+		<objeto accionid="dar" objetoid="aspirina" quien="pescadero"/>
+	</lugar>
+	<lugar id="carniceria" nombre="la carnicería" img="pesco.ejercicios.BagItems.img.lugares.carniceria.png">
+		<objeto accionid="comprar" objetoid="filete" quien="carnicero"/>
+		<objeto accionid="dar" objetoid="moneda" quien="carnicero"/>
+		<objeto accionid="dar" objetoid="aspirina" quien="carnicero"/>
+	</lugar>
+	<lugar id="zoo" nombre="el zoo" img="pesco.ejercicios.BagItems.img.lugares.zoo.png">
+		<objeto accionidid="dar" objetoid="platano" quien="gorilas"/>
+	</lugar>
+</lugares>

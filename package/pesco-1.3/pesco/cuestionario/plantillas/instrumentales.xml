@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<!DOCTYPE cuestionario>
+<?xml-stylesheet type='text/xsl' href='cuestionario.xsl'?>
+<cuestionario>
+  <titulo>Escala Funcional: Autonomía  para  las  actividades  instrumentales  de  la  vida  diaria</titulo>
+  <pregunta>
+    <enunciado>A la hora de usar el teléfono:</enunciado>
+    <imagen>pesco.cuestionario.img.telefono.png</imagen>
+    <respuesta>
+      <texto>Soy capaz de utilizar el teléfono plenamente</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Soy capaz de marcar bien algunos números familiares</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Soy capaz de contestar al teléfono, pero no de marcar</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>No soy capaz de usar el teléfono</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de hacer compras:</enunciado>
+    <imagen>pesco.cuestionario.img.compra.png</imagen>
+    <respuesta>
+      <texto>Realizo todas las compras necesarias de forma independiente</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Sólo realizo pequeñas compras de forma independiente</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito ir acompañada/o para hacer cualquier compra</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Soy totalmente incapaz de comprar</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de preparar la comida:</enunciado>
+    <imagen>pesco.cuestionario.img.cocinar.png</imagen>
+    <respuesta>
+      <texto>Soy capaz de organizar, preparar y servir las comidas</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Soy capaz de preparar adecuadamente las comidas si me
+proporcionan los ingredientes</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Soy capaz de preparar, calentar y servir las comidas, 
+pero no sigo una dieta adecuada</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito que me preparen y sirvan las comidas</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora del cuidado de la casa:</enunciado>
+    <imagen>pesco.cuestionario.img.escoba.png</imagen>
+    <respuesta>
+      <texto>Soy capaz de mantener la casa solo/a o con ayuda ocasional</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Sólo soy capaz de realizar tareas ligeras, como lavar los platos 
+o hacer las camas</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Sólo soy capaz de realizar tareas ligeras, pero no puedo mantener
+un adecuado nivel de limpieza</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Necesito ayuda en todas las labores de la casa</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>No participo en ninguna labor de la casa</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de lavar la ropa:</enunciado>
+    <imagen>pesco.cuestionario.img.lavadora.png</imagen>
+    <respuesta>
+      <texto>Soy capaz de lavar toda mi ropa</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Sólo soy capaz de lavar pequeñas prendas</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Todo el lavado de ropa debe ser realizado por otro</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de utilizar medios de transporte:</enunciado>
+    <imagen>pesco.cuestionario.img.autobuses.png</imagen>
+    <respuesta>
+      <texto>Soy capaz de viajar solo en transporte público o soy 
+capaz de conducir mi propio coche</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Sólo viajo en transporte público cuando voy acompañado
+por otra persona</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Sólo utilizo el taxi o el automóvil con ayuda de otros</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>No soy capaz de viajar</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de tomar tu medicación:</enunciado>
+    <imagen>pesco.cuestionario.img.pastillas.png</imagen>
+    <respuesta>
+      <texto>Soy capaz de tomar mi medicación a la hora y
+con la dosis correcta</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Sólo soy capaz de tomar mi medicación cuando
+es preparada previamente por otra persona</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>No soy capaz de tomar mi medicación yo solo </texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>A la hora de manejar los asuntos económicos:</enunciado>
+    <imagen>pesco.cuestionario.img.dinero.png</imagen>
+    <respuesta>
+      <texto>Soy capaz de encargarme de mis asuntos económicos  </texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Sólo realizo las compras de cada día, pero necesito
+ayuda en las grandes compras y en los bancos</texto>
+      <puntuacion>1</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+    <respuesta>
+      <texto>Soy incapaz de manejar dinero</texto>
+      <puntuacion>0</puntuacion>
+      <seleccionada>false</seleccionada>
+    </respuesta>
+  </pregunta>
+  <siguiente_pregunta>0</siguiente_pregunta>
+</cuestionario>

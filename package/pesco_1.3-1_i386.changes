@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 10 Mar 2014 08:19:02 +0100
+Source: pesco
+Binary: pesco
+Architecture: source i386
+Version: 1.3-1
+Distribution: unstable
+Urgency: low
+Maintainer: María José Rodríguez Fortíz <mjfortiz@ugr.es>
+Changed-By: Alvaro Lopez <arsuceno@gmail.com>
+Description: 
+ pesco      - PESCO
+Closes: 9999
+Changes: 
+ pesco (1.3-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #9999)
+Checksums-Sha1: 
+ d3445af4c236bde91d3bf0faa32151fa2502476b 1314 pesco_1.3-1.dsc
+ ac9e3459312a07f412bba9e28d35ed91be178fdc 34089848 pesco_1.3.orig.tar.gz
+ a8ec267d54c12477981da7e2b1f9c2ac3e1153a6 29512 pesco_1.3-1.debian.tar.gz
+ 7a21b16a4d6bbfd998711d41f7cef49ec1c65ce7 21618148 pesco_1.3-1_i386.deb
+Checksums-Sha256: 
+ 0d2c09722df27af4fac7646985733e9e21b1df01c5abddde194505aaef6bdf09 1314 pesco_1.3-1.dsc
+ a6e3e87d30a6a5909a66ab98991af06e68c5bae68b82b3f9507ffcb72f20f0ae 34089848 pesco_1.3.orig.tar.gz
+ 5792328146bcb67b64ce06ea80dcac8a3b1a0276cbed2713723411a8b715f8cb 29512 pesco_1.3-1.debian.tar.gz
+ dd2e122abdb42a725cb57b3d333a4e0526fabd1cd25abdbf850685c76fbba7ba 21618148 pesco_1.3-1_i386.deb
+Files: 
+ 4624efd8ef65944a680e8342ecfed447 1314 unknown extra pesco_1.3-1.dsc
+ 521f2bb9b4af7a9656fead91b8437760 34089848 unknown extra pesco_1.3.orig.tar.gz
+ 286205bfd33d00052efc6b64b609c64b 29512 unknown extra pesco_1.3-1.debian.tar.gz
+ 9cd51c82a304de0349f2c36236eec831 21618148 unknown extra pesco_1.3-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQEcBAEBAgAGBQJTHgudAAoJELXN+XRvLpatmIcIAJdVF2LuysZmYVGfUx04npws
+KaxATzN2K1CHqSFa2gkpStErvUv4YKPPzKQFsQQTIkztx3wZFhALsIEdJxj4Kba7
+xhv2VuCPFYxZRgKGcLnm8EuoNU0usAzx/OFqXiz20JydTh1Mt8u5jxRTgDzm7yV8
+Eb9I5OYYUHtQU3qCfNmTrxxjuLei3Mw0cOQUqL5Y/vgf7YnfmDRr9MGaNEedRB9D
+vhK/DMwTVtrhLlKdcpGsk78twbh1n2wrqbgtboi8v8D5U+I/K1HyUxe5gPBQwmgh
+dHZeEWe1hqyXLtetb+lRw+95beCsXNrV18Z7TCG8lQLbLpKwxfaRWf9T+Xl/ZME=
+=FkXK
+-----END PGP SIGNATURE-----

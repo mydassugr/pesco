@@ -1,0 +1,9 @@
+Package: pesco
+Version: 1.3-1
+Architecture: i386
+Maintainer: María José Rodríguez Fortíz <mjfortiz@ugr.es>
+Installed-Size: 22569
+Section: unknown
+Priority: extra
+Description: PESCO
+ Plataforma de EStimulación COgnitiva. Aplicación de estimulación cognitiva para personas mayores o con problemas cognitivos.

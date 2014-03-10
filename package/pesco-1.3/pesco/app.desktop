@@ -1,0 +1,13 @@
+
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=ec-ng
+Exec=ec-ng
+Terminal=false
+Icon=accessories-calculator
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Accesibility;EC-NG
+
+Name[es_ES]=app.desktop

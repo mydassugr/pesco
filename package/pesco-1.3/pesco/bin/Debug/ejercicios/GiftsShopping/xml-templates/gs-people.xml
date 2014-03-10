@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<!DOCTYPE pesco.GS_PersonManager>
+<GS_PersonManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <people>
+    <id>0</id>
+    <name>Nieto Daniel</name>
+    <edad>7</edad>
+    <img>imgnieto</img>
+  </people>
+  <people>
+    <id>1</id>
+    <name>Hermano Joaquín</name>
+    <edad>54</edad>
+    <img>imgnieto</img>
+  </people>
+  <people>
+    <id>2</id>
+    <name>Sobrino José</name>
+    <edad>20</edad>
+    <img>imgnieto</img>
+  </people>
+  <people>
+    <id>3</id>
+    <name>Vecina Pepa</name>
+    <edad>60</edad>
+    <img>imgnieto</img>
+  </people>
+  <people>
+	  <id>4</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+  <people>
+	  <id>5</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+      <people>
+	  <id>6</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+  <people>
+	  <id>7</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+      <people>
+	  <id>8</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+  <people>
+	  <id>9</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+      <people>
+	  <id>10</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+  <people>
+	  <id>11</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+      <people>
+	  <id>12</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+  <people>
+	  <id>13</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+      <people>
+	  <id>14</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+  <people>
+	  <id>15</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people> 
+  <people>
+	  <id>16</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+    <people>
+	  <id>17</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+    <people>
+	  <id>18</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+    <people>
+	  <id>19</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+    <people>
+	  <id>20</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+    <people>
+	  <id>21</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+    <people>
+	  <id>22</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+    <people>
+	  <id>23</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+    <people>
+	  <id>24</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+    <people>
+	  <id>25</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+    <people>
+	  <id>26</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+    <people>
+	  <id>27</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+    <people>
+	  <id>28</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+    <people>
+	  <id>29</id>
+	  <name>Hija Manuela</name>
+	  <edad>40</edad>
+	  <img>imgnieto</img>
+  </people>
+</GS_PersonManager>

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=PESCO
+Comment=
+Exec=pesco
+Icon=pesco
+Terminal=false
+Type=Application
+StartupNotify=true
+NoDisplay=false
+Categories=GTK;GNOME;Utility;Accessibility;
+
+Name[es]=PESCO (Plataforma de Estimulación Cognitiva)
+Name[en]=PESCO (Plataforma de Estimulación Cognitiva)
+Name[es_ES]=PESCO (Plataforma de Estimulación Cognitiva)
